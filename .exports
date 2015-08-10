@@ -1,0 +1,16 @@
+# .exports
+
+# Path to your oh-my-zsh installation.
+export ZSH=$HOME/.oh-my-zsh
+
+# X11's path.
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin" 
+
+# MySQL's path.
+export PATH="$PATH:/usr/local/mysql/bin" 
+
+# Encoding UTF-8
+export LC_ALL=en_US.UFT-8 
+
+# Sublime Text as default editor.
+export EDITOR='subl' 
