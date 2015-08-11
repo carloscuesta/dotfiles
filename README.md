@@ -2,6 +2,8 @@
 
 These are my dotfiles, I will be making changes and maintaining the repo as I found interesting stuff to add it.
 
+## NOT FINISHED WORK IN PROGRESS ..
+
 ## Setup 
 
 I’ve made a script to make the setup process easy. 
@@ -23,5 +25,3 @@ The setup process will :
 * Help you to start with setup of Git.
 
 The **dotfiles** will be stored on a folder called `~/.dotfiles/` in your home directory and the **ZSH files** at `~/` (**ZSH themes** `./oh-my-zsh/themes/`)
-
-##### WORK IN PROGRESS ...
