@@ -1,3 +1,8 @@
+[user]
+	name = John Doe
+	email = johndoe@mail.com
+[credential]
+	
 [alias]
 
 	# View abbreviated SHA, description, and history graph of the latest 20 commits

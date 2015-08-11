@@ -14,6 +14,9 @@ ZShell() {
 	while ! http://install.ohmyz.sh | sh &> /dev/null; do        
 	    sleep 5
 	done
+	# removing zshrc config file incase exists, we are going to create it later
+	rm $HOME/.zshrc
+	rm $HOME/.zshrc-e
 	print_success 'Oh-My-Zsh Installed.'
 
 }
