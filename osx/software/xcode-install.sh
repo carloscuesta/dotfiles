@@ -15,7 +15,7 @@ xcode_install() {
 	else
 		print_error 'Xcode Command Line Tools not installed'
 	fi
-
+	
 }
 
 xcode_install
