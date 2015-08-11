@@ -3,7 +3,7 @@
 # Loading our .dotfiles (aliases, functions, exports, extras)
 # ~/.extra can be used for settings you don't want to commit.
 
-for file in ~/.{aliases,functions,exports,extras}; do
+for file in ~/.dotfiles/.{aliases,functions,exports,extra}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
