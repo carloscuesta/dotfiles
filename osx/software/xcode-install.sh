@@ -16,6 +16,8 @@ xcode_install() {
 		print_error 'Xcode Command Line Tools not installed'
 	fi
 	
+	# backing up .gitconfig file incase exists, we are going to create .gitconfig later
+	file_exists "$HOME/.gitconfig"
 }
 
 xcode_install

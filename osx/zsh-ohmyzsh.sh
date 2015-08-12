@@ -17,11 +17,7 @@ ZShell() {
 	done
 	
 	# backing up zshrc config file incase exists, we are going to create .zshrc later
-	
-	if [ -f $HOME/.zshrc ]; then
-		execute "mv $HOME/.zshrc $HOME/.zshrc-backup"
-		print_in_blue ".zshrc backed up ~/.zshrc-backup\n"
-	fi
+	file_exists "$HOME/.zshrc"
 
 	print_success 'Oh-My-Zsh Installed.'
 }

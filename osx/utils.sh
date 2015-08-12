@@ -32,14 +32,21 @@ ask_for_sudo() {
 
 }
 
-dotfiles_directory_exists() {
+directory_exists() {
     if [ -d $1 ]; then
-        execute "mv $HOME/.dotfiles/ $HOME/.dotfiles-backup/"
-        print_in_blue "  Your .dotfiles/ folder is backed-up in .dotfiles-backup/\n"
-        execute "mkdir $HOME/.dotfiles/"
+        execute "mv $1 $1-backup/"
+        print_in_blue "  Your $1 folder is backed-up in $1-backup/\n"
+        execute "mkdir $1"
     else 
-        execute "mkdir $HOME/.dotfiles/"
-        print_success ".dotfiles/ directory created at $HOME"
+        execute "mkdir $1"
+        print_success "$1 directory created at $1"
+    fi
+}
+
+file_exists() {
+    if [ -f $1 ]; then
+        execute "mv $1 $1-backup"
+        print_in_blue "$1 backed up $1-backup\n"
     fi
 }
 

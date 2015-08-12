@@ -40,7 +40,7 @@ To customize the visual part of the terminal. You will need to install a theme, 
 
 I use the [Ethan’s Solarized theme](http://ethanschoonover.com/solarized) and one created by me. 
 
-##### iTerm2 
+#### iTerm2 
 
 If you want to change the iTerm’s 2 theme, go to `iTerm Preferences > Profiles > + (Create a new profile) > Colors > Load Presets > Import > (Select the theme)`. 
 
@@ -62,7 +62,7 @@ Set as **default** the profile with the theme you like selecting it and going to
     </tbody>
 </table>
 
-##### OS X Terminal 
+#### OS X Terminal 
 
 If you want to change OS X Terminal theme, go to `Terminal Preferences > Gear Icon > Import`. 
 
@@ -89,6 +89,14 @@ Set as **default** the profile with the theme you like selecting it and clicking
 
 You can change the functionality of every single file included in my [dotfiles repo](https://github.com/carloscuesta/dotfiles/). Going to the `~/.dotfiles/` folder and editing the .files.
 
+* `.aliases`: Includes the aliases (e.g. `lock`, `c`, `~`, `..`, `myip`)
+* `.exports`: Includes the exports path.
+* `.functions`: Includes the functions (e.g. `server`, `extract`)
+* `.extra`: This is a blank file loaded with .zshrc. Inside of them you can put whatever you want custom functions, aliases, commands that you not want to include in the repository and override the other files.
+
+* `.zshrc`: Includes the zshell configuration.
+* `.gitconfig`: Includes the git configuration.
+
 ```bash
 subl ~/.dotfiles/.extra
 ```
@@ -102,11 +110,3 @@ function md() {
 
 # add whatever you want, and info that shouldn't be in a repository
 ```
-
-* `.aliases`: Includes the aliases (e.g. `lock`, `c`, `~`, `..`, `myip`)
-* `.exports`: Includes the exports path.
-* `.functions`: Includes the functions (e.g. `server`, `extract`)
-* `.extra`: This is a blank file loaded with .zshrc. Inside of them you can put whatever you want custom functions, aliases, commands that you not want to include in the repository and override the other files.
-
-* `.zshrc`: Includes the zshell configuration.
-* `.gitconfig`: Includes the git configuration.

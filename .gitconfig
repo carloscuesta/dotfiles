@@ -21,7 +21,16 @@
 	p = !"git pull; git submodule foreach git pull origin master"
 
 	# Clone a repository including all submodules
-	c = clone --recursive
+	cl = clone --recursive
+
+	# Commit 
+	c = commit -am 
+
+	# Pull
+	up = pull
+
+	#Log
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 
 	# Commit all changes
 	ca = !git add -A && git commit -av
