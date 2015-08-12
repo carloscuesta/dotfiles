@@ -4,7 +4,7 @@ source './osx/utils.sh'
 
 xcode_install() {
 
-	ask_for_confirmation "Would you like to install Xcode Command Line Tools ?"
+	ask_for_confirmation "Would you like to install Xcode Command Line Tools (required) ?"
 
 	if answer_is_yes; then
 		xcode-select --install &> /dev/null
