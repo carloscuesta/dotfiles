@@ -9,7 +9,7 @@ I’ve made a script to make the setup process easy.
 Copy this command into the terminal, and the setup will start.
 
 ```bash
-git clone https://github.com/carloscuesta/dotfiles && cd dotfiles && ./osx.sh
+git clone https://github.com/carloscuesta/dotfiles && cd dotfiles && ./setup.sh
 ```
 
 And that’s all! :thumbsup:
@@ -50,6 +50,20 @@ Set as **default** the profile with the theme you like selecting it and going to
 
 [Custom Theme](https://github.com/carloscuesta/dotfiles/tree/master/themes/iterm2/)
 
+<table>
+    <tbody>
+        <tr><td colspan="2">iTerm2 Themes</tr></td>
+        <tr>
+            <td>
+                <img src="https://cloud.githubusercontent.com/assets/7629661/9222351/7bc4f2b8-40f1-11e5-98bf-f3e66010ee4a.png" alt="iTerm2 Carlos Cuesta Material" width="100%">
+            </td>
+            <td>
+                <img src="https://cloud.githubusercontent.com/assets/7629661/9220888/17f10610-40e6-11e5-9864-96ff1996821b.png" alt="iTerm2 Solarized." width="100%">
+            </td>
+        </tr>
+    </tbody>
+</table>
+
 
 ##### OS X Terminal 
 
@@ -60,6 +74,21 @@ Set as **default** the profile with the theme you like selecting it and clicking
 [Solarized Dark](https://github.com/carloscuesta/dotfiles/tree/master/themes/terminal/solarized-dark.terminal)
 
 [Custom Theme](https://github.com/carloscuesta/dotfiles/tree/master/themes/terminal/)
+
+<table>
+    <tbody>
+        <tr><td colspan="2">iTerm2 Themes</tr></td>
+        <tr>
+            <td>
+                <img src="https://cloud.githubusercontent.com/assets/7629661/9221000/fd2f9656-40e6-11e5-8a90-a8a669d747b7.png" alt="OS X Terminal Solarized" width="100%">
+            </td>
+            <td>
+                <img src="https://cloud.githubusercontent.com/assets/7629661/9222480/580a2860-40f2-11e5-950b-46ea351c1c37.png" alt="OS X Terminal Custom Theme" width="100%">
+            </td>
+        </tr>
+    </tbody>
+</table>
+
 
 ### Functionality 
 
