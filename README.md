@@ -46,9 +46,7 @@ If you want to change the iTerm’s 2 theme, go to `iTerm Preferences > Profiles
 
 Set as **default** the profile with the theme you like selecting it and going to `Profiles > Other Actions ... > Set as default`.
 
-[Solarized Dark](https://github.com/carloscuesta/dotfiles/tree/master/themes/iterm2/solarized-dark.itermcolors)
-
-[Custom Theme](https://github.com/carloscuesta/dotfiles/tree/master/themes/iterm2/)
+[Carlos Cuesta Theme](https://github.com/carloscuesta/dotfiles/blob/master/themes/iterm2/carloscuesta.itermcolors) | [Solarized Dark](https://github.com/carloscuesta/dotfiles/tree/master/themes/iterm2/solarized-dark.itermcolors)
 
 <table>
     <tbody>
@@ -64,26 +62,23 @@ Set as **default** the profile with the theme you like selecting it and going to
     </tbody>
 </table>
 
-
 ##### OS X Terminal 
 
 If you want to change OS X Terminal theme, go to `Terminal Preferences > Gear Icon > Import`. 
 
 Set as **default** the profile with the theme you like selecting it and clicking on `Default` button.
 
-[Solarized Dark](https://github.com/carloscuesta/dotfiles/tree/master/themes/terminal/solarized-dark.terminal)
-
-[Custom Theme](https://github.com/carloscuesta/dotfiles/tree/master/themes/terminal/)
+[Carlos Cuesta Theme](https://github.com/carloscuesta/dotfiles/blob/master/themes/terminal/carloscuesta.terminal) | [Solarized Dark](https://github.com/carloscuesta/dotfiles/tree/master/themes/terminal/solarized-dark.terminal)
 
 <table>
     <tbody>
-        <tr><td colspan="2">iTerm2 Themes</tr></td>
+        <tr><td colspan="2">OS X Terminal</tr></td>
         <tr>
             <td>
-                <img src="https://cloud.githubusercontent.com/assets/7629661/9221000/fd2f9656-40e6-11e5-8a90-a8a669d747b7.png" alt="OS X Terminal Solarized" width="100%">
+                <img src="https://cloud.githubusercontent.com/assets/7629661/9222480/580a2860-40f2-11e5-950b-46ea351c1c37.png" alt="OS X Terminal Custom Theme" width="100%">
             </td>
             <td>
-                <img src="https://cloud.githubusercontent.com/assets/7629661/9222480/580a2860-40f2-11e5-950b-46ea351c1c37.png" alt="OS X Terminal Custom Theme" width="100%">
+                <img src="https://cloud.githubusercontent.com/assets/7629661/9221000/fd2f9656-40e6-11e5-8a90-a8a669d747b7.png" alt="OS X Terminal Solarized" width="100%">
             </td>
         </tr>
     </tbody>
@@ -98,9 +93,15 @@ You can change the functionality of every single file included in my [dotfiles r
 subl ~/.dotfiles/.extra
 ```
 ```bash
-#.extra file 
-```
+# .extra file
+alias c='clear' # Clear terminal display
 
+function md() {
+	mkdir -p "$1" && cd "$1"; 
+}
+
+# add whatever you want, and info that shouldn't be in a repository
+```
 
 * `.aliases`: Includes the aliases (e.g. `lock`, `c`, `~`, `..`, `myip`)
 * `.exports`: Includes the exports path.
