@@ -121,6 +121,7 @@ Inspiration and code was taken from many sources, including:
 * [@alrra](https://github.com/alrra) (Cãtãlin Mariş)
   [https://github.com/alrra/dotfiles](https://github.com/alrra/dotfiles)
 * [@paulirish](https://github.com/paulirish) (Paul Irish)
+  [https://github.com/paulirish/dotfiles](https://github.com/paulirish/dotfiles)
 * [@nathaniellandau](http://natelandau.com) (Nathaniel Landau)
 
 ## License
