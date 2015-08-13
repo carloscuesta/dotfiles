@@ -43,6 +43,13 @@ directory_exists() {
     fi
 }
 
+directory_backup() {
+    if [ -d $1 ]; then
+        execute "mv $1 $1-backup/"
+        print_in_blue "  Your $1 folder is backed-up in $1-backup/\n"
+    fi
+}
+
 file_exists() {
     if [ -f $1 ]; then
         execute "mv $1 $1-backup"
