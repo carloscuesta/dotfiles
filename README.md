@@ -1,6 +1,7 @@
 # Carlos Cuesta's dotfiles
 
 These are my dotfiles, I will be making changes and maintaining the repo as I find interesting stuff to add it.
+
 ![iterm2-carloscuesta-material](https://cloud.githubusercontent.com/assets/7629661/9222351/7bc4f2b8-40f1-11e5-98bf-f3e66010ee4a.png)
 ## Setup 
 
