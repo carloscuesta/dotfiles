@@ -4,7 +4,7 @@ source './osx/utils.sh'
 
 restart() {
 
-	print_succes "Done!. Some changes may not apply until you restart"
+	print_success "Done!. Some changes may not apply until you restart"
 	ask_for_confirmation "Would you like to Restart now ?"
 
 	if answer_is_yes; then
