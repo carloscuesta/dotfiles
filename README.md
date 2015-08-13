@@ -23,6 +23,7 @@ The setup process will :
 * Install the .dotfiles (aliases, functions, exports, extra, zshconfig, gitconfig).
 * Install Xcode Command Line Tools (vcs’s like git and compilers).
 * Help you to start with setup of Git.
+* Backup all the files that are going to be modified.
 
 The **dotfiles** will be stored on a folder called `~/.dotfiles/` in your home directory, except for the **zsh files** that will be at `~/` and the **Oh-My-Zsh** themes on `~/.oh-my-zsh/themes/`.
 
@@ -110,3 +111,18 @@ function md() {
 
 # add whatever you want, and info that shouldn't be in a repository
 ```
+
+## Acknowledgements
+
+Inspiration and code was taken from many sources, including:
+
+* [@mathiasbynens](https://github.com/mathiasbynens) (Mathias Bynens)
+  [https://github.com/mathiasbynens/dotfiles](https://github.com/mathiasbynens/dotfiles)
+* [@alrra](https://github.com/alrra) (Cãtãlin Mariş)
+  [https://github.com/alrra/dotfiles](https://github.com/alrra/dotfiles)
+* [@paulirish](https://github.com/paulirish) (Paul Irish)
+* [@nathaniellandau](http://natelandau.com) (Nathaniel Landau)
+
+## License
+
+The code is available under the [MIT license](https://github.com/carloscuesta/dotfiles/blob/master/license.txt).

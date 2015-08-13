@@ -1,7 +1,4 @@
 # .aliases
-# Including aliases from : 
-# - Paul Irish (http://github.com/paulirish)
-# - Nathaniel Landau (http://natelandau.com/my-mac-osx-bash_profile/)
 
 alias rm='rm -i' # safety first
 alias lock="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend" # lock mac
@@ -29,7 +26,6 @@ alias apacheRestart='sudo apachectl graceful' # Restart Apache
 alias editHosts='sudo $EDITOR /etc/hosts' # Edit /etc/hosts file
 alias apacheLogs="less +F /var/log/apache2/error_log" # Shows apache error logs
 alias myip='curl ip.appspot.com' # Public facing IP Address
-alias netCons='lsof -i' # Show all open TCP/IP sockets
 alias flushDNS='dscacheutil -flushcache' # Flush out the DNS Cache
 alias openPorts='sudo lsof -i | grep LISTEN' # All listening connections
 alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'' | less' 
