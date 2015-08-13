@@ -12,7 +12,7 @@ chmod u+x ./osx/*.sh
 chmod u+x ./osx/software/*.sh
 
 ./osx/computer-info.sh
-#./osx/osx-preferences.sh
+./osx/osx-preferences.sh
 ./osx/software/xcode-install.sh
 ./osx/zsh-ohmyzsh.sh
 
