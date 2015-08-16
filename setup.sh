@@ -37,4 +37,7 @@ done;
 unset files;
 print_success ".files copied to your $HOME/.dotfiles/ directory."
 
+./osx/software/brew-install.sh
+./osx/software/brew-packages.sh 
+
 ./osx/restart.sh
