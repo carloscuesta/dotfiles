@@ -1,4 +1,5 @@
 # Alrra utils.sh (https://github.com/alrra/dotfiles/blob/master/os/utils.sh) from his dotfiles repo
+# I added extra functions
 
 answer_is_yes() {
     [[ "$REPLY" =~ ^[Yy]$ ]] \
@@ -47,6 +48,36 @@ directory_backup() {
     if [ -d $1 ]; then
         execute "mv $1 $1-backup/"
         print_in_blue "  Your $1 folder is backed-up in $1-backup/\n"
+    fi
+}
+
+brew_install() {
+   ask_for_confirmation "Would you like to install $1 ?"
+    if answer_is_yes; then
+        execute "brew install $1"
+        print_success "$1 installed."
+    else
+        print_error "$1 not installed."
+    fi 
+}
+
+brew_cask_install() {
+    ask_for_confirmation "Would you like to install $1 ?"
+    if answer_is_yes; then
+        execute "brew cask install $1"
+        print_success "$1 installed."
+    else
+        print_error "$1 not installed."
+    fi
+}
+
+npm_install() {
+    ask_for_confirmation "Would you like to install $1 ?"
+    if answer_is_yes; then
+        execute "npm install -g $1"
+        print_success "$1 installed."
+    else
+        print_error "$1 not installed."
     fi
 }
 

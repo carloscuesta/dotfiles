@@ -25,6 +25,8 @@ The setup process will :
 * Install Xcode Command Line Tools (vcs’s like git and compilers).
 * Help you to start with setup of Git.
 * Backup all the files that are going to be modified.
+* Install [Homebrew](http://brew.sh) (brew)
+* Install packages and software through brew.
 
 The **dotfiles** will be stored on a folder called `~/.dotfiles/` in your home directory, except for the **zsh files** that will be at `~/` and the **Oh-My-Zsh** themes on `~/.oh-my-zsh/themes/`.
 
@@ -112,6 +114,31 @@ function md() {
 
 # add whatever you want, and info that shouldn't be in a repository
 ```
+
+## Homebrew (brew)
+
+The dotfiles script will *ask to install* the following packages and software: 
+
+*Shell tools*
+
+* Tree
+
+*Developer*
+
+* [Node](https://nodejs.org) & [npm](https://www.npmjs.com) (using the recommended installation method).
+
+*OSX Software*
+
+* [Sublime Text 3](http://www.sublimetext.com/3)
+* [iTerm2](https://iterm2.com) 
+* [Smcfancontrol](http://www.eidac.de) 
+* [Spectacle](http://spectacleapp.com) 
+* [Dropbox](https://www.dropbox.com) 
+* [Slack](https://slack.com) 
+* [Skype](http://www.skype.com/) 
+* [gfxCardStatus](https://gfx.io)
+* [Google Chrome](https://www.google.com/chrome/)
+* [Firefox Developer Edition](https://www.mozilla.org/es-ES/firefox/developer/)
 
 ## Acknowledgements
 
