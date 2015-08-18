@@ -34,6 +34,36 @@ Once the installation process finishes, you will be asked for a restart, some ch
 
 I've included two **themes** for iTerm 2 and Terminal: Solarized Dark, Custom Theme. You can find the themes at `/dotfiles/themes/iterm2` - `/dotfiles/themes/terminal`. At the customization part I will explain how to install it and customize it.
 
+## Homebrew (brew)
+
+The dotfiles script will **ask to install** the following packages and software: 
+
+**Developer**
+
+* [Node](https://nodejs.org) & [npm](https://www.npmjs.com) (using the recommended installation method).
+    * [Bower](http://bower.io)
+    * [Gulp](http://gulpjs.com)
+    * [Grunt](http://gruntjs.com)
+    * [Yeoman](http://yeoman.io)
+    * [Webpack](http://webpack.github.io)
+    * [Less](http://lesscss.org)
+    * [JSHint](http://jshint.com)
+    * [JSCS](http://jscs.info)
+    * [CSSLint](https://github.com/CSSLint/csslint)
+
+**OSX Software**
+
+* [Sublime Text 3](http://www.sublimetext.com/3)
+* [iTerm2](https://iterm2.com) 
+* [Smcfancontrol](http://www.eidac.de) 
+* [Spectacle](http://spectacleapp.com) 
+* [Dropbox](https://www.dropbox.com) 
+* [Slack](https://slack.com) 
+* [Skype](http://www.skype.com/) 
+* [gfxCardStatus](https://gfx.io)
+* [Google Chrome](https://www.google.com/chrome/)
+* [Firefox Developer Edition](https://www.mozilla.org/es-ES/firefox/developer/)
+
 ## Customization 
 
 You can customize this setup in two ways, the **appearance** and the **functional** parts.
@@ -114,31 +144,6 @@ function md() {
 
 # add whatever you want, and info that shouldn't be in a repository
 ```
-
-## Homebrew (brew)
-
-The dotfiles script will *ask to install* the following packages and software: 
-
-*Shell tools*
-
-* Tree
-
-*Developer*
-
-* [Node](https://nodejs.org) & [npm](https://www.npmjs.com) (using the recommended installation method).
-
-*OSX Software*
-
-* [Sublime Text 3](http://www.sublimetext.com/3)
-* [iTerm2](https://iterm2.com) 
-* [Smcfancontrol](http://www.eidac.de) 
-* [Spectacle](http://spectacleapp.com) 
-* [Dropbox](https://www.dropbox.com) 
-* [Slack](https://slack.com) 
-* [Skype](http://www.skype.com/) 
-* [gfxCardStatus](https://gfx.io)
-* [Google Chrome](https://www.google.com/chrome/)
-* [Firefox Developer Edition](https://www.mozilla.org/es-ES/firefox/developer/)
 
 ## Acknowledgements
 

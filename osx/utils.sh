@@ -159,7 +159,7 @@ print_in_yellow() {
 }
 
 print_in_blue() {
-    printf "  \e[0;34m$1\e[0m"
+    printf "  \e[0;34m$1\e[0m\n"
 }
 
 print_info() {

@@ -20,7 +20,7 @@ brew_packages() {
 		print_in_blue "Developer packages"
 		brew_install "node"
 
-		./osx/software/npm-packages.sh # bower, yeoman, gulp, grunt, less, jshint, csslint
+		./osx/software/npm-packages.sh # bower, yeoman, gulp, grunt, webpack, less, jshint, jscs, csslint
 
 		# OSX Software 
 		
