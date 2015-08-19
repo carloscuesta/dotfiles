@@ -27,6 +27,7 @@ brew_packages() {
 		print_in_blue "OS X Apps."
 		./osx-apps.sh # sublime text 3, iterm2, smcfancontrol, spectacle, dropbox, slack, skype, gfxcardstatus
 
+		brew cleanup
 	else 
 		print_error 'brew not installed, the packages cannot be installed without brew.'
 		./osx/software/brew-install.sh

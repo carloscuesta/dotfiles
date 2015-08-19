@@ -3,6 +3,9 @@
 These are my dotfiles, I will be making changes and maintaining the repo as I find interesting stuff to add it.
 
 ![iterm2-carloscuesta-material](https://cloud.githubusercontent.com/assets/7629661/9222351/7bc4f2b8-40f1-11e5-98bf-f3e66010ee4a.png)
+
+_→_ [Setup](https://github.com/carloscuesta/dotfiles/#setup) / [Customization](https://github.com/carloscuesta/dotfiles/#customization) / [Homebrew](https://github.com/carloscuesta/dotfiles/#homebrew-brew) / [Functionality](https://github.com/carloscuesta/dotfiles/#functionality)
+
 ## Setup 
 
 I’ve made a script to make the setup process easy. 
@@ -26,43 +29,13 @@ The setup process will :
 * Help you to start with setup of Git.
 * Backup all the files that are going to be modified.
 * Install [Homebrew](http://brew.sh) (brew)
-* Install packages and software through brew.
+* Install packages and software through [brew](https://github.com/carloscuesta/dotfiles/#homebrew-brew)([software and packages list](https://github.com/carloscuesta/dotfiles/#homebrew-brew)).
 
 The **dotfiles** will be stored on a folder called `~/.dotfiles/` in your home directory, except for the **zsh files** that will be at `~/` and the **Oh-My-Zsh** themes on `~/.oh-my-zsh/themes/`.
 
 Once the installation process finishes, you will be asked for a restart, some changes may require a restart to apply it. 
 
-I've included two **themes** for iTerm 2 and Terminal: Solarized Dark, Custom Theme. You can find the themes at `/dotfiles/themes/iterm2` - `/dotfiles/themes/terminal`. At the customization part I will explain how to install it and customize it.
-
-## Homebrew (brew)
-
-The dotfiles script will **ask to install** the following packages and software: 
-
-**Developer**
-
-* [Node](https://nodejs.org) & [npm](https://www.npmjs.com) (using the recommended installation method).
-    * [Bower](http://bower.io)
-    * [Gulp](http://gulpjs.com)
-    * [Grunt](http://gruntjs.com)
-    * [Yeoman](http://yeoman.io)
-    * [Webpack](http://webpack.github.io)
-    * [Less](http://lesscss.org)
-    * [JSHint](http://jshint.com)
-    * [JSCS](http://jscs.info)
-    * [CSSLint](https://github.com/CSSLint/csslint)
-
-**OSX Software**
-
-* [Sublime Text 3](http://www.sublimetext.com/3)
-* [iTerm2](https://iterm2.com) 
-* [Smcfancontrol](http://www.eidac.de) 
-* [Spectacle](http://spectacleapp.com) 
-* [Dropbox](https://www.dropbox.com) 
-* [Slack](https://slack.com) 
-* [Skype](http://www.skype.com/) 
-* [gfxCardStatus](https://gfx.io)
-* [Google Chrome](https://www.google.com/chrome/)
-* [Firefox Developer Edition](https://www.mozilla.org/es-ES/firefox/developer/)
+I've included two **themes** for iTerm 2 and Terminal: Solarized Dark, Custom Theme. You can find the themes at `/dotfiles/themes/iterm2` - `/dotfiles/themes/terminal`. At the [customization part](https://github.com/carloscuesta/dotfiles/#customization) I will explain how to install it and customize it.
 
 ## Customization 
 
@@ -118,6 +91,35 @@ Set as **default** the profile with the theme you like selecting it and clicking
     </tbody>
 </table>
 
+## Homebrew (brew)
+
+The dotfiles script will **ask to install** the following packages and software: 
+
+**Developer**
+
+* [Node](https://nodejs.org) & [npm](https://www.npmjs.com) (using the recommended installation method).
+    * [Bower](http://bower.io)
+    * [Gulp](http://gulpjs.com)
+    * [Grunt](http://gruntjs.com)
+    * [Yeoman](http://yeoman.io)
+    * [Webpack](http://webpack.github.io)
+    * [Less](http://lesscss.org)
+    * [JSHint](http://jshint.com)
+    * [JSCS](http://jscs.info)
+    * [CSSLint](https://github.com/CSSLint/csslint)
+
+**OSX Software**
+
+* [Sublime Text 3](http://www.sublimetext.com/3)
+* [iTerm2](https://iterm2.com) 
+* [Smcfancontrol](http://www.eidac.de) 
+* [Spectacle](http://spectacleapp.com) 
+* [Dropbox](https://www.dropbox.com) 
+* [Slack](https://slack.com) 
+* [Skype](http://www.skype.com/) 
+* [gfxCardStatus](https://gfx.io)
+* [Google Chrome](https://www.google.com/chrome/)
+* [Firefox Developer Edition](https://www.mozilla.org/es-ES/firefox/developer/)
 
 ### Functionality 
 
