@@ -12,7 +12,7 @@ brew_packages() {
 
 		# Shell Specific
 		
-		print_in_blue ""
+		print_in_blue "Shell packages"
 		brew_install "tree"
 
 		# Developer 

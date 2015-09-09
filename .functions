@@ -64,3 +64,27 @@ extract () {
        echo "'$1' is not a valid file"
    fi
 }
+
+# gp : Install Gulp plugins and add them as `devDependencies` to `package.json` eg: `gp uglify clean cache csso`
+
+function gp() {
+  npm install --save-dev ${*/#/gulp-}
+}
+
+# yi : Install Yeoman generators eg: `yi webapp gruntfile angular`
+
+function yi() {
+  npm install --save-dev ${*/#/generator-}
+}
+
+# json : pretty print of a json
+
+function json() {
+  if [ -p /dev/stdin ]; then
+    # piping, e.g. `echo '{"foo":42}' | json`
+    python -mjson.tool | pygmentize -l javascript
+  else
+    # e.g. `json '{"foo":42}'`
+    python -mjson.tool <<< "$*" | pygmentize -l javascript
+  fi
+}

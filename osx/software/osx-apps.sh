@@ -1,7 +1,7 @@
 source './osx/utils.sh'
 
 # brew_packages : Asks to install these package through brew.
-# Packages : sublime text 3, iterm2, smcfancontrol, spectacle, dropbox, slack, skype, gfxCardStatus, firefoxdevedition
+# Packages : sublime text 3, iterm2, smcfancontrol, spectacle, dropbox, slack, skype, gfxCardStatus, firefoxdevedition, quickLookPlugins
 
 osx_apps() {
 
@@ -20,6 +20,10 @@ osx_apps() {
 	brew_cask_install "gfxcardstatus"
 	brew_cask_install "google-chrome"	
 	brew_cask_install "caskroom/versions/firefoxdeveloperedition"
+	brew_cask_install "qlcolorcode"
+	brew_cask_install "qlstephen"
+	brew_cask_install "quicklook-json"
+	brew_cask_install "qlmarkdown"
 }
 
 osx_apps
