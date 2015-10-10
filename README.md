@@ -1,10 +1,9 @@
 # Carlos dotfiles.
 
-These are my dotfiles, I will be making changes and maintaining the repo as I find interesting stuff to add it.
-
 ![dotfiles-jetpack](https://cloud.githubusercontent.com/assets/7629661/10404493/696e4910-6ed3-11e5-9b1a-88065e5e3fef.png)
 
 > Carlos Cuesta's personal dotfiles, that contains all the OS X sensible defaults that I use, must have software and packages, and of course my .files for my OS X system.
+
 
 [Setup](https://github.com/carloscuesta/dotfiles/#setup) / [Demo](https://github.com/carloscuesta/dotfiles#demo) / [Customization](https://github.com/carloscuesta/dotfiles/#customization) / [Homebrew](https://github.com/carloscuesta/dotfiles/#homebrew-brew) / [Functionality](https://github.com/carloscuesta/dotfiles/#functionality)
 
