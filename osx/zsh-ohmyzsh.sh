@@ -6,15 +6,15 @@ ZShell() {
 
 	# Set ZSH as the OS X shell (better than bash).
 	print_success 'Changing to ZSH (shell)'
-	
+
 	chsh -s /bin/zsh
 
 	directory_backup "$HOME/.oh-my-zsh"
-	
+
 	# Installing Oh-My-ZSH
 	cd ~
 	curl -L http://install.ohmyz.sh | sh &> /dev/null
-	
+
 	# backing up zshrc and config file and theme incase exists, we are going to create .zshrc later
 	file_exists "$HOME/.zshrc"
 	file_exists "$HOME/.oh-my-zsh/themes/nico.zsh-theme"

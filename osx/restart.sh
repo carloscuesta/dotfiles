@@ -9,7 +9,7 @@ restart() {
 
 	if answer_is_yes; then
 		sudo shutdown -r now "Restarting ..."
-	else 
+	else
 	print_error "You will need to restart manually later."
 	fi
 

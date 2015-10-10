@@ -1,9 +1,9 @@
 # .functions
 
-# md : Makes a new dir and jumps into it.
+# mcd : Makes a new dir and jumps into it.
 
-function md() {
-	mkdir -p "$1" && cd "$1"; 
+function mcd() {
+	mkdir -p "$1" && cd "$1";
 }
 
 # server : Start an HTTP server from a directory, optionally specifying the port

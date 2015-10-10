@@ -8,14 +8,14 @@ xcode_install() {
 
 	if answer_is_yes; then
 		xcode-select --install &> /dev/null
-		while ! xcode-select -p &> /dev/null; do        
+		while ! xcode-select -p &> /dev/null; do
 		    sleep 5
 		done
 		print_success 'Xcode Command Line Tools installed'
 	else
 		print_error 'Xcode Command Line Tools not installed'
 	fi
-	
+
 	# backing up .gitconfig file incase exists, we are going to create .gitconfig later
 	file_exists "$HOME/.gitconfig"
 }

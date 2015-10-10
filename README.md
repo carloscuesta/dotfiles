@@ -1,10 +1,12 @@
-# Carlos Cuesta's dotfiles
+# Carlos dotfiles
 
 These are my dotfiles, I will be making changes and maintaining the repo as I find interesting stuff to add it.
 
 ![iterm2-carloscuesta-material](https://cloud.githubusercontent.com/assets/7629661/9222351/7bc4f2b8-40f1-11e5-98bf-f3e66010ee4a.png)
 
-_→_ [Setup](https://github.com/carloscuesta/dotfiles/#setup) / [Customization](https://github.com/carloscuesta/dotfiles/#customization) / [Homebrew](https://github.com/carloscuesta/dotfiles/#homebrew-brew) / [Functionality](https://github.com/carloscuesta/dotfiles/#functionality)
+> Carlos Cuesta's personal dotfiles, that contains all the OS X sensible defaults that I use, must have software and packages, and of course my .files for my OS X system.
+
+[Setup](https://github.com/carloscuesta/dotfiles/#setup) / [Demo]() / [Customization](https://github.com/carloscuesta/dotfiles/#customization) / [Homebrew](https://github.com/carloscuesta/dotfiles/#homebrew-brew) / [Functionality](https://github.com/carloscuesta/dotfiles/#functionality)
 
 ## Setup 
 
@@ -18,10 +20,10 @@ git clone https://github.com/carloscuesta/dotfiles && cd dotfiles && ./setup.sh
 
 And that’s all! :thumbsup:
 
-The setup process will : 
+The **setup process** will : 
 
 * Set up OS X computer info (ComputerName, HostName, LocalHostName).
-* Set custom OS X preferences.
+* Set custom OS X preferences and defaults.
 * Set ZSH shell and [Oh-My-Zsh](https://github.com/robbyrussell/oh-my-zsh).
 	* Customize ZSH with Oh-My-Zsh.
 * Install the .dotfiles (aliases, functions, exports, extra, zshconfig, gitconfig).
@@ -35,7 +37,11 @@ The **dotfiles** will be stored on a folder called `~/.dotfiles/` in your home d
 
 Once the installation process finishes, you will be asked for a restart, some changes may require a restart to apply it. 
 
-I've included two **themes** for iTerm 2 and Terminal: Solarized Dark, Custom Theme. You can find the themes at `/dotfiles/themes/iterm2` - `/dotfiles/themes/terminal`. At the [customization part](https://github.com/carloscuesta/dotfiles/#customization) I will explain how to install it and customize it.
+I've included two **themes** for iTerm 2 and Terminal: Solarized Dark, Custom Theme. You can find the themes at `/dotfiles/themes/iterm2` - `/dotfiles/themes/terminal`. At the [customization part](https://github.com/carloscuesta/dotfiles/#customization) I will explain how to install and customize it.
+
+## Demo
+
+
 
 ## Customization 
 

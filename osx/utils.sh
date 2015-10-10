@@ -38,7 +38,7 @@ directory_exists() {
         execute "mv $1 $1-backup/"
         print_in_blue "  Your $1 folder is backed-up in $1-backup/\n"
         execute "mkdir $1"
-    else 
+    else
         execute "mkdir $1"
         print_success "$1 directory created at $1"
     fi
@@ -58,7 +58,7 @@ brew_install() {
         print_success "$1 installed."
     else
         print_error "$1 not installed."
-    fi 
+    fi
 }
 
 brew_cask_install() {

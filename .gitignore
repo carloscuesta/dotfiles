@@ -1,0 +1,12 @@
+# OS X files
+
+.DS_Store
+.Trashes
+.Spotlight-V100
+
+# Editor config files
+
+*.sublime-*
+
+# Misc
+*.log

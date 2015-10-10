@@ -4,7 +4,7 @@
 source './osx/utils.sh'
 execution_dir=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
-clear	
+clear
 print_in_purple '\nOS X Config Dotfiles - Carlos Cuesta\n\n'
 ask_for_sudo
 
@@ -17,12 +17,13 @@ chmod u+x ./osx/software/*.sh
 ./osx/zsh-ohmyzsh.sh
 
 # Copying the dotfiles to the home folder
-# .zshrc, .gitconfig -> $HOME | nico.zsh-theme -> $HOME/.oh-my-zsh/themes 
-for file in $execution_dir/.{zshrc,gitconfig}; do
+# .zshrc, .gitconfig, .gitignore -> $HOME
+for file in $execution_dir/.{zshrc,gitconfig,gitignore}; do
 	execute "cp -iv "$file" $HOME/"
 done;
 unset file;
 
+# nico.zsh-theme -> $HOME/.oh-my-zsh/themes
 execute "cp -iv $execution_dir/nico.zsh-theme $HOME/.oh-my-zsh/themes/"
 print_success ".zshrc,.gitconfig,nico.zsh-theme copied!."
 
@@ -38,6 +39,6 @@ unset files;
 print_success ".files copied to your $HOME/.dotfiles/ directory."
 
 ./osx/software/brew-install.sh
-./osx/software/brew-packages.sh 
+./osx/software/brew-packages.sh
 
 ./osx/restart.sh

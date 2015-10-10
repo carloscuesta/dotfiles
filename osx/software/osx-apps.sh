@@ -18,7 +18,7 @@ osx_apps() {
 	brew_cask_install "slack"
 	brew_cask_install "skype"
 	brew_cask_install "gfxcardstatus"
-	brew_cask_install "google-chrome"	
+	brew_cask_install "google-chrome"
 	brew_cask_install "caskroom/versions/firefoxdeveloperedition"
 	brew_cask_install "qlcolorcode"
 	brew_cask_install "qlstephen"
