@@ -1,7 +1,7 @@
 source './osx/utils.sh'
 
 # npm_packages : Asks to install these package through npm.
-# Packages : bower, yeoman, gulp, grunt, webpack, less, jshint, jscs, csslint
+# Packages : bower, yeoman, gulp, grunt, webpack, less, jshint, jscs, csslint, sass-lint, generator-starterkit
 
 npm_packages() {
 
@@ -21,6 +21,8 @@ npm_packages() {
 		npm_install "jshint"
 		npm_install "jscs"
 		npm_install "csslint"
+        npm_install "sass-lint"
+        npm_install "generator-starterkit"
 	else
 		print_error 'npm not installed (required to install node packages).'
 	fi
