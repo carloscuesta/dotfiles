@@ -111,3 +111,14 @@ function mkicns() {
         rm -r $filename.iconset
     fi
 }
+
+# hklogs : Display logs from a heroku app continually
+
+function hklogs() {
+    local app_name="$1"
+    if [ -z "${app_name}" ]; then
+      echo "Error, you need to specify the app name. Usage: hklogs appname"
+    else
+        heroku logs --app $app_name -t
+    fi
+}
