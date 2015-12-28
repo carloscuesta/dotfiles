@@ -18,11 +18,12 @@ npm_packages() {
 		npm_install "yo"
 		npm_install "webpack"
 		npm_install "less"
+		npm_install "node-sass"
 		npm_install "jshint"
 		npm_install "jscs"
 		npm_install "csslint"
-        npm_install "sass-lint"
-        npm_install "generator-starterkit"
+        	npm_install "sass-lint"
+        	npm_install "generator-starterkit"
 	else
 		print_error 'npm not installed (required to install node packages).'
 	fi
