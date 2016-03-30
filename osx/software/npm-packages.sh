@@ -12,7 +12,7 @@ npm_packages() {
 
 		print_in_blue "npm packages"
 
-		npm_install "bower"
+		npm_install "nodemon"
 		npm_install "gulp"
 		npm_install "grunt"
 		npm_install "yo"
@@ -22,8 +22,8 @@ npm_packages() {
 		npm_install "jshint"
 		npm_install "jscs"
 		npm_install "csslint"
-        	npm_install "sass-lint"
-        	npm_install "generator-starterkit"
+    	npm_install "sass-lint"
+    	npm_install "generator-starterkit"
 	else
 		print_error 'npm not installed (required to install node packages).'
 	fi
