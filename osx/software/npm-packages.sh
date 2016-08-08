@@ -24,6 +24,7 @@ npm_packages() {
 		npm_install "csslint"
     	npm_install "sass-lint"
     	npm_install "generator-starterkit"
+        npm_install "prettyjson"
 	else
 		print_error 'npm not installed (required to install node packages).'
 	fi

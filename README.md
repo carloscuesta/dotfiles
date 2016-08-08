@@ -4,12 +4,11 @@
 
 > Carlos Cuesta's personal dotfiles, that contains all the OS X sensible defaults that I use, must have software and packages, and of course my .files for my OS X system.
 
-
 [Setup](https://github.com/carloscuesta/dotfiles/#setup) / [Demo](https://github.com/carloscuesta/dotfiles#demo) / [Customization](https://github.com/carloscuesta/dotfiles/#customization) / [Homebrew](https://github.com/carloscuesta/dotfiles/#homebrew-brew) / [Functionality](https://github.com/carloscuesta/dotfiles/#functionality)
 
-## Setup 
+## Setup
 
-I’ve made a script to make the setup process easy. 
+I’ve made a script to make the setup process easy.
 
 Copy this command into the terminal, and the setup will start.
 
@@ -19,7 +18,7 @@ git clone https://github.com/carloscuesta/dotfiles && cd dotfiles && ./setup.sh
 
 And that’s all! :thumbsup:
 
-The **setup process** will : 
+The **setup process** will :
 
 * Set up OS X computer info (ComputerName, HostName, LocalHostName).
 * Set custom OS X preferences and defaults.
@@ -34,7 +33,7 @@ The **setup process** will :
 
 The **dotfiles** will be stored on a folder called `~/.dotfiles/` in your home directory, except for the **zsh files** that will be at `~/` and the **Oh-My-Zsh** themes on `~/.oh-my-zsh/themes/`.
 
-Once the installation process finishes, you will be asked for a restart, some changes may require a restart to apply it. 
+Once the installation process finishes, you will be asked for a restart, some changes may require a restart to apply it.
 
 I've included two **themes** for iTerm 2 and Terminal: Solarized Dark, Custom Theme. You can find the themes at `/dotfiles/themes/iterm2` - `/dotfiles/themes/terminal`. At the [customization part](https://github.com/carloscuesta/dotfiles/#customization) I will explain how to install and customize it.
 
@@ -42,7 +41,7 @@ I've included two **themes** for iTerm 2 and Terminal: Solarized Dark, Custom Th
 
 ![dotfiles](https://cloud.githubusercontent.com/assets/7629661/10410526/871e0c90-6f44-11e5-813f-49ea868cc2f4.gif)
 
-## Customization 
+## Customization
 
 You can customize this setup in two ways, the **appearance** and the **functional** parts.
 
@@ -50,11 +49,11 @@ You can customize this setup in two ways, the **appearance** and the **functiona
 
 To customize the visual part of the terminal. You will need to install a theme, as I said at the setup part I’ve included two themes, depending If you are using **iTerm2** or **OS X Terminal**.
 
-I use the [Ethan’s Solarized theme](http://ethanschoonover.com/solarized) and one created by me. 
+I use the [Ethan’s Solarized theme](http://ethanschoonover.com/solarized) and one created by me.
 
-#### iTerm2 
+#### iTerm2
 
-If you want to change the iTerm’s 2 theme, go to `iTerm Preferences > Profiles > + (Create a new profile) > Colors > Load Presets > Import > (Select the theme)`. 
+If you want to change the iTerm’s 2 theme, go to `iTerm Preferences > Profiles > + (Create a new profile) > Colors > Load Presets > Import > (Select the theme)`.
 
 Set as **default** the profile with the theme you like selecting it and going to `Profiles > Other Actions ... > Set as default`.
 
@@ -74,9 +73,9 @@ Set as **default** the profile with the theme you like selecting it and going to
     </tbody>
 </table>
 
-#### OS X Terminal 
+#### OS X Terminal
 
-If you want to change OS X Terminal theme, go to `Terminal Preferences > Gear Icon > Import`. 
+If you want to change OS X Terminal theme, go to `Terminal Preferences > Gear Icon > Import`.
 
 Set as **default** the profile with the theme you like selecting it and clicking on `Default` button.
 
@@ -98,7 +97,7 @@ Set as **default** the profile with the theme you like selecting it and clicking
 
 ## Homebrew (brew)
 
-The dotfiles script will **ask to install** the following packages and software: 
+The dotfiles script will **ask to install** the following packages and software:
 
 **Developer**
 
@@ -116,17 +115,17 @@ The dotfiles script will **ask to install** the following packages and software:
 **OSX Software**
 
 * [Sublime Text 3](http://www.sublimetext.com/3)
-* [iTerm2](https://iterm2.com) 
-* [Smcfancontrol](http://www.eidac.de) 
-* [Spectacle](http://spectacleapp.com) 
-* [Dropbox](https://www.dropbox.com) 
-* [Slack](https://slack.com) 
-* [Skype](http://www.skype.com/) 
+* [iTerm2](https://iterm2.com)
+* [Smcfancontrol](http://www.eidac.de)
+* [Spectacle](http://spectacleapp.com)
+* [Dropbox](https://www.dropbox.com)
+* [Slack](https://slack.com)
+* [Skype](http://www.skype.com/)
 * [gfxCardStatus](https://gfx.io)
 * [Google Chrome](https://www.google.com/chrome/)
 * [Firefox Developer Edition](https://www.mozilla.org/es-ES/firefox/developer/)
 
-### Functionality 
+### Functionality
 
 You can change the functionality of every single file included in my [dotfiles repo](https://github.com/carloscuesta/dotfiles/). Going to the `~/.dotfiles/` folder and editing the .files.
 
@@ -146,7 +145,7 @@ subl ~/.dotfiles/.extra
 alias c='clear' # Clear terminal display
 
 function md() {
-	mkdir -p "$1" && cd "$1"; 
+	mkdir -p "$1" && cd "$1";
 }
 
 # add whatever you want, and info that shouldn't be in a repository
