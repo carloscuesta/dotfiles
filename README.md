@@ -1,4 +1,4 @@
-# Carlos dotfiles.
+# Carlos Cuesta dotfiles.
 
 ![dotfiles-jetpack](https://cloud.githubusercontent.com/assets/7629661/10404493/696e4910-6ed3-11e5-9b1a-88065e5e3fef.png)
 
@@ -35,7 +35,7 @@ The **dotfiles** will be stored on a folder called `~/.dotfiles/` in your home d
 
 Once the installation process finishes, you will be asked for a restart, some changes may require a restart to apply it.
 
-I've included two **themes** for iTerm 2 and Terminal: Solarized Dark, Custom Theme. You can find the themes at `/dotfiles/themes/iterm2` - `/dotfiles/themes/terminal`. At the [customization part](https://github.com/carloscuesta/dotfiles/#customization) I will explain how to install and customize it.
+I've included two **materialshell** for iTerm 2 and Terminal. You can find the themes at `/dotfiles/themes/iterm2` - `/dotfiles/themes/terminal`. At the [customization part](https://github.com/carloscuesta/dotfiles/#customization) I will explain how to install and customize it.
 
 ## Demo
 
@@ -49,29 +49,11 @@ You can customize this setup in two ways, the **appearance** and the **functiona
 
 To customize the visual part of the terminal. You will need to install a theme, as I said at the setup part I’ve included two themes, depending If you are using **iTerm2** or **OS X Terminal**.
 
-I use the [Ethan’s Solarized theme](http://ethanschoonover.com/solarized) and one created by me.
-
 #### iTerm2
 
 If you want to change the iTerm’s 2 theme, go to `iTerm Preferences > Profiles > + (Create a new profile) > Colors > Load Presets > Import > (Select the theme)`.
 
 Set as **default** the profile with the theme you like selecting it and going to `Profiles > Other Actions ... > Set as default`.
-
-[Carlos Cuesta Theme](https://github.com/carloscuesta/dotfiles/blob/master/themes/iterm2/carloscuesta.itermcolors) | [Solarized Dark](https://github.com/carloscuesta/dotfiles/tree/master/themes/iterm2/solarized-dark.itermcolors)
-
-<table>
-    <tbody>
-        <tr><td colspan="2">iTerm2 Themes</tr></td>
-        <tr>
-            <td>
-                <img src="https://cloud.githubusercontent.com/assets/7629661/9222351/7bc4f2b8-40f1-11e5-98bf-f3e66010ee4a.png" alt="iTerm2 Carlos Cuesta Material" width="100%">
-            </td>
-            <td>
-                <img src="https://cloud.githubusercontent.com/assets/7629661/9220888/17f10610-40e6-11e5-9864-96ff1996821b.png" alt="iTerm2 Solarized." width="100%">
-            </td>
-        </tr>
-    </tbody>
-</table>
 
 #### OS X Terminal
 
@@ -79,21 +61,7 @@ If you want to change OS X Terminal theme, go to `Terminal Preferences > Gear Ic
 
 Set as **default** the profile with the theme you like selecting it and clicking on `Default` button.
 
-[Carlos Cuesta Theme](https://github.com/carloscuesta/dotfiles/blob/master/themes/terminal/carloscuesta.terminal) | [Solarized Dark](https://github.com/carloscuesta/dotfiles/tree/master/themes/terminal/solarized-dark.terminal)
-
-<table>
-    <tbody>
-        <tr><td colspan="2">OS X Terminal</tr></td>
-        <tr>
-            <td>
-                <img src="https://cloud.githubusercontent.com/assets/7629661/9222480/580a2860-40f2-11e5-950b-46ea351c1c37.png" alt="OS X Terminal Custom Theme" width="100%">
-            </td>
-            <td>
-                <img src="https://cloud.githubusercontent.com/assets/7629661/9221000/fd2f9656-40e6-11e5-8a90-a8a669d747b7.png" alt="OS X Terminal Solarized" width="100%">
-            </td>
-        </tr>
-    </tbody>
-</table>
+I use [materialshell](https://github.com/carloscuesta/materialshell). 
 
 ## Homebrew (brew)
 
