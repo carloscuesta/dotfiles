@@ -49,6 +49,8 @@ You can customize this setup in two ways, the **appearance** and the **functiona
 
 To customize the visual part of the terminal. You will need to install a theme, as I said at the setup part I’ve included two themes, depending If you are using **iTerm2** or **OS X Terminal**.
 
+I use a theme called [materialshell](https://github.com/carloscuesta/materialshell).
+
 #### iTerm2
 
 If you want to change the iTerm’s 2 theme, go to `iTerm Preferences > Profiles > + (Create a new profile) > Colors > Load Presets > Import > (Select the theme)`.
@@ -60,8 +62,6 @@ Set as **default** the profile with the theme you like selecting it and going to
 If you want to change OS X Terminal theme, go to `Terminal Preferences > Gear Icon > Import`.
 
 Set as **default** the profile with the theme you like selecting it and clicking on `Default` button.
-
-I use [materialshell](https://github.com/carloscuesta/materialshell). 
 
 ## Homebrew (brew)
 
