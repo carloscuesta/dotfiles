@@ -1,7 +1,7 @@
 source './osx/utils.sh'
 
 # npm_packages : Asks to install these package through npm.
-# Packages : nodemon, yeoman, gulp, grunt, webpack, less, xo, csslint, sass-lint, generator-starterkit, prettyjson
+# Packages : nodemon, yeoman, gulp, grunt, webpack, less, xo, csslint, sass-lint, generator-starterkit, prettyjson, jshint
 
 npm_packages() {
 
@@ -20,6 +20,7 @@ npm_packages() {
 		npm_install "less"
 		npm_install "node-sass"
 		npm_install "xo"
+		npm_install "jshint"
 		npm_install "csslint"
     		npm_install "sass-lint"
     		npm_install "generator-starterkit"
