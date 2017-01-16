@@ -19,6 +19,12 @@
 
 	# Pull in remote changes for the current repository and all its submodules
 	p = !"git pull; git submodule foreach git pull origin master"
+	
+	# Push local branch to remote
+	plb = "!f() { git push -u origin $1}"
+	
+	# Clean untracked files
+	cuf = clean -f
 
 	# Clone a repository including all submodules
 	cl = clone --recursive
