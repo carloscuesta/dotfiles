@@ -13,6 +13,12 @@ git_config() {
 		read git_email
 		execute "git config --global user.email $git_email\n"
 		print_success "Git setup -> Username: $git_username , Email: $git_email\n"
+		
+		print_question "Git global editor: "
+		read git_editor
+		execute "git config --global core.editor $git_editor --wait"
+
+		print_success "Git setup -> Username: $git_username , Email: $git_email\n, Editor: $git_editor\n"
 	else
 		print_error "Git is not installed, and cannot be configured now, install the Xcode Command Line Tools."
 		./osx/software/xcode-install.sh
