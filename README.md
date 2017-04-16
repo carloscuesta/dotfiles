@@ -35,8 +35,6 @@ The **dotfiles** will be stored on a folder called `~/.dotfiles/` in your home d
 
 Once the installation process finishes, you will be asked for a restart, some changes may require a restart to apply it.
 
-I've included two **materialshell** for iTerm 2 and Terminal. You can find the themes at `/dotfiles/themes/iterm2` - `/dotfiles/themes/terminal`. At the [customization part](https://github.com/carloscuesta/dotfiles/#customization) I will explain how to install and customize it.
-
 ## Demo
 
 ![dotfiles](https://cloud.githubusercontent.com/assets/7629661/10410526/871e0c90-6f44-11e5-813f-49ea868cc2f4.gif)
@@ -47,7 +45,7 @@ You can customize this setup in two ways, the **appearance** and the **functiona
 
 ### Appearance
 
-To customize the visual part of the terminal. You will need to install a theme, as I said at the setup part I’ve included two themes, depending If you are using **iTerm2** or **OS X Terminal**.
+To customize the visual part of the terminal. You will need to install a theme. An **iTerm** theme has been provided.
 
 I use a theme called [materialshell](https://github.com/carloscuesta/materialshell).
 
@@ -70,20 +68,16 @@ The dotfiles script will **ask to install** the following packages and software:
 **Developer**
 
 * [Node](https://nodejs.org) & [npm](https://www.npmjs.com) (using the recommended installation method).
-    * [Bower](http://bower.io)
-    * [Gulp](http://gulpjs.com)
-    * [Grunt](http://gruntjs.com)
-    * [Yeoman](http://yeoman.io)
-    * [Webpack](http://webpack.github.io)
-    * [Less](http://lesscss.org)
-    * [JSHint](http://jshint.com)
-    * [JSCS](http://jscs.info)
-    * [CSSLint](https://github.com/CSSLint/csslint)
+* [Nodemon](https://nodemon.io)
+* [Gulp](http://gulpjs.com)
+* [Webpack](http://webpack.github.io)
+* [Xo](https://github.com/sindresorhus/xo)
+* [Gitmoji-cli](https://gitmoji.carloscuesta.me)
+* [React-native-cli](https://facebook.github.io/react-native/docs/getting-started.html)
 
 **OSX Software**
 
-* [Sublime Text 3](http://www.sublimetext.com/3)
-* [iTerm2](https://iterm2.com)
+* [iTerm](https://iterm2.com)
 * [Smcfancontrol](http://www.eidac.de)
 * [Spectacle](http://spectacleapp.com)
 * [Dropbox](https://www.dropbox.com)
