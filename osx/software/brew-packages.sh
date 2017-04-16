@@ -20,12 +20,12 @@ brew_packages() {
 		print_in_blue "Developer packages"
 		brew_install "node"
 
-		./osx/software/npm-packages.sh # bower, yeoman, gulp, grunt, webpack, less, jshint, jscs, csslint
+		./osx/software/npm-packages.sh
 
 		# OSX Software
 
 		print_in_blue "OS X Apps."
-		./osx-apps.sh # sublime text 3, iterm2, smcfancontrol, spectacle, dropbox, slack, skype, gfxcardstatus
+		./osx-apps.sh
 
 		brew cleanup
 	else

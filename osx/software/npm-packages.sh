@@ -1,7 +1,6 @@
 source './osx/utils.sh'
 
 # npm_packages : Asks to install these package through npm.
-# Packages : nodemon, yeoman, gulp, grunt, webpack, less, xo, csslint, sass-lint, generator-starterkit, prettyjson, jshint
 
 npm_packages() {
 
@@ -14,17 +13,13 @@ npm_packages() {
 
 		npm_install "nodemon"
 		npm_install "gulp"
-		npm_install "grunt"
-		npm_install "yo"
 		npm_install "webpack"
-		npm_install "less"
 		npm_install "node-sass"
 		npm_install "xo"
-		npm_install "jshint"
-		npm_install "csslint"
-    		npm_install "sass-lint"
-    		npm_install "generator-starterkit"
-        	npm_install "prettyjson"
+		npm_install "sass-lint"
+    	npm_install "prettyjson"
+        npm_install "gitmoji-cli"
+        npm_install "react-native-cli"
 	else
 		print_error 'npm not installed (required to install node packages).'
 	fi
