@@ -9,6 +9,7 @@ osx_apps() {
 	brew_install "caskroom/cask/brew-cask"
 	brew_install "caskroom/versions"
 
+    brew_cask_install "atom"
 	brew_cask_install "iterm2"
 	brew_cask_install "smcfancontrol"
 	brew_cask_install "spectacle"
