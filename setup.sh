@@ -23,10 +23,6 @@ for file in $execution_dir/.{zshrc,gitconfig,gitignore}; do
 done;
 unset file;
 
-# materialshell.zsh-theme -> $HOME/.oh-my-zsh/themes
-execute "cp -iv $execution_dir/materialshell.zsh-theme $HOME/.oh-my-zsh/themes/"
-print_success ".zshrc,.gitconfig,materialshell.zsh-theme copied!."
-
 ./osx/git-config.sh
 
 directory_exists "$HOME/.dotfiles"

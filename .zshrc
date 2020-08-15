@@ -9,7 +9,7 @@ done;
 unset file;
 
 # Set name of the theme to load @ ~/.oh-my-zsh/themes/
-ZSH_THEME="nico"
+ZSH_THEME="materialshell"
 
 # Uncomment the following line to disable auto-setting terminal title.
 DISABLE_AUTO_TITLE="true"

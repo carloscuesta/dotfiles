@@ -15,9 +15,8 @@ ZShell() {
 	cd ~
 	curl -L http://install.ohmyz.sh | sh &> /dev/null
 
-	# backing up zshrc and config file and theme incase exists, we are going to create .zshrc later
 	file_exists "$HOME/.zshrc"
-	file_exists "$HOME/.oh-my-zsh/themes/nico.zsh-theme"
+	execute "curl -L -o ~/.oh-my-zsh/custom/themes/materialshell.zsh-theme https://raw.githubusercontent.com/carloscuesta/materialshell/master/materialshell.zsh"
 
 	print_success 'Oh-My-Zsh Installed.'
 }
