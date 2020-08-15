@@ -19,6 +19,7 @@ brew_packages() {
 
 		print_in_blue "Developer packages"
 		brew_install "node"
+		brew_install "yarn"
 
 		./osx/software/npm-packages.sh
 
