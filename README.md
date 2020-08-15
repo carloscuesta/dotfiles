@@ -68,24 +68,15 @@ The dotfiles script will **ask to install** the following packages and software:
 **Developer**
 
 * [Node](https://nodejs.org) & [npm](https://www.npmjs.com) (using the recommended installation method).
-* [Nodemon](https://nodemon.io)
-* [Gulp](http://gulpjs.com)
-* [Webpack](http://webpack.github.io)
-* [Xo](https://github.com/sindresorhus/xo)
 * [Gitmoji-cli](https://gitmoji.carloscuesta.me)
 * [React-native-cli](https://facebook.github.io/react-native/docs/getting-started.html)
+* [Npm](https://www.npmjs.com/)
+* [Yarn](https://classic.yarnpkg.com/en/)
 
 **OSX Software**
 
 * [iTerm](https://iterm2.com)
-* [Smcfancontrol](http://www.eidac.de)
-* [Spectacle](http://spectacleapp.com)
-* [Dropbox](https://www.dropbox.com)
-* [Slack](https://slack.com)
-* [Skype](http://www.skype.com/)
-* [gfxCardStatus](https://gfx.io)
-* [Google Chrome](https://www.google.com/chrome/)
-* [Firefox Developer Edition](https://www.mozilla.org/es-ES/firefox/developer/)
+* [Rectangle](https://rectangleapp.com/)
 
 ### Functionality
 
@@ -98,20 +89,6 @@ You can change the functionality of every single file included in my [dotfiles r
 
 * `.zshrc`: Includes the zshell configuration.
 * `.gitconfig`: Includes the git configuration.
-
-```bash
-subl ~/.dotfiles/.extra
-```
-```bash
-# .extra file
-alias c='clear' # Clear terminal display
-
-function md() {
-	mkdir -p "$1" && cd "$1";
-}
-
-# add whatever you want, and info that shouldn't be in a repository
-```
 
 ## Acknowledgements
 
