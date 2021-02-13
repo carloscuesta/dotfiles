@@ -3,11 +3,9 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
-# X11's path.
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
-
-# MySQL's path.
-export PATH="$PATH:/usr/local/mysql/bin"
-
 # Atom as default editor.
 export EDITOR='atom'
+
+# Language
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
