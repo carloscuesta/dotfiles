@@ -14,6 +14,7 @@ brew_packages() {
 
 		print_in_blue "Shell packages"
 		brew_install "tree"
+		brew_install "jq"
 
 		# Developer
 
