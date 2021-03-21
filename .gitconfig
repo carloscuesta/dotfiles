@@ -2,7 +2,7 @@
 	name = John Doe
 	email = johndoe@mail.com
 [credential]
-	
+
 [alias]
 
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
@@ -19,18 +19,21 @@
 
 	# Pull in remote changes for the current repository and all its submodules
 	p = !"git pull; git submodule foreach git pull origin master"
-	
+
 	# Push local branch to remote
 	plb = "!f() { git push -u origin $1}"
-	
+
 	# Clean untracked files
 	cuf = clean -f
 
 	# Clone a repository including all submodules
 	cl = clone --recursive
 
-	# Commit 
-	c = commit -am 
+	# Rebase branch on top of master
+	rebmaster = rebase --interactive --autosquash origin/master
+
+	# Commit
+	c = commit -m
 
 	# Pull
 	up = pull
@@ -135,9 +138,9 @@
 
 [color "status"]
 
-	added = green 
-	changed = yellow 
-	untracked = red 
+	added = green
+	changed = yellow
+	untracked = red
 
 [diff]
 
