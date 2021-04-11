@@ -16,7 +16,6 @@ alias edit='$EDITOR' # Opens any file in sublime editor
 alias f='open -a Finder ./' # Opens current directory in MacOS Finder
 alias ~="cd ~" # Go Home
 alias c='clear' # Clear terminal display
-alias which='type -all' # Find executables
 alias apacheEdit='sudo $EDITOR /etc/httpd/httpd.conf' # Edit httpd.conf
 alias apacheRestart='sudo apachectl graceful' # Restart Apache
 alias editHosts='sudo $EDITOR /etc/hosts' # Edit /etc/hosts file
