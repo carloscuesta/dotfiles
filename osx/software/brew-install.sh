@@ -7,7 +7,7 @@ brew_install() {
 	ask_for_confirmation "Would you like to install Homebrew (Brew) ?"
 
 	if answer_is_yes; then
-		ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+		/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 		if cmd_exists "brew"; then
 			print_success 'Brew has been succesfully installed!'
 		else
