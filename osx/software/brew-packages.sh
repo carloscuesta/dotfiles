@@ -15,14 +15,13 @@ brew_packages() {
 		print_in_blue "Shell packages"
 		brew_install "tree"
 		brew_install "jq"
+    brew_install "gpg"
+    brew_install "pinetry-mac"
 
 		# Developer
 
 		print_in_blue "Developer packages"
-		brew_install "node"
 		brew_install "yarn"
-
-		./osx/software/npm-packages.sh
 
 		# OSX Software
 
