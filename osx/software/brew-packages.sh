@@ -17,6 +17,7 @@ brew_packages() {
 		brew_install "jq"
     brew_install "gpg"
     brew_install "pinetry-mac"
+    brew_install "gh"
 
 		# Developer
 
