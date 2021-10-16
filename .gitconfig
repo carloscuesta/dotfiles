@@ -18,6 +18,10 @@
 	# Commit
 	ct = commit -m
 	amend = commit --amend
+	
+	# Checkout
+	co = checkout
+	cob = checkout -b
 
 	# Push
 	p = push
