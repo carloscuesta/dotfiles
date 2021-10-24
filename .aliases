@@ -22,3 +22,4 @@ alias flushDNS='dscacheutil -flushcache' # Flush out the DNS Cache
 alias openPorts='sudo lsof -i | grep LISTEN' # All listening connections
 alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'' | less'
 alias numFiles='echo $(ls -1 | wc -l)' # Count of non-hidden files in current dir
+alias cat='bat --paging=never' # Use bat for cat
