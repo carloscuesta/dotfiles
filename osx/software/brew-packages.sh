@@ -15,9 +15,10 @@ brew_packages() {
 		print_in_blue "Shell packages"
 		brew_install "tree"
 		brew_install "jq"
-    brew_install "gpg"
-    brew_install "pinetry-mac"
-    brew_install "gh"
+                brew_install "gpg"
+                brew_install "pinetry-mac"
+                brew_install "gh"
+		brew_install "bat"
 
 		# Developer
 
