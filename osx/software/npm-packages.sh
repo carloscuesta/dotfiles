@@ -11,7 +11,7 @@ npm_packages() {
 
 		print_in_blue "npm packages"
 		npm_install "gitmoji-cli"
-		npm_install "react-native-cli"
+		npm_install "@antfu/ni"
 	else
 		print_error 'npm not installed (required to install node packages).'
 	fi
