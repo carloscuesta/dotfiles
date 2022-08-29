@@ -1,8 +1,7 @@
 [user]
 	name = John Doe
 	email = johndoe@mail.com
-[credential]
-	helper = osxkeychain
+	signingkey = ssh-ed25519
 [alias]
 
 	# Log
@@ -193,3 +192,5 @@
 	gpgsign = true
 [tag]
 	gpgsign = true
+[gpg]
+	format = ssh
