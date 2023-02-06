@@ -6,3 +6,7 @@
 
 # Misc
 *.log
+
+# VSCode
+.vscode
+
