@@ -95,7 +95,7 @@
 	whitespace = fix
 
 [core]
-
+	pager = delta
 	# Use custom `.gitignore` and `.gitattributes`
 	excludesfile = ~/.gitignore
 	attributesfile = ~/.gitattributes
@@ -194,3 +194,14 @@
 	gpgsign = true
 [gpg]
 	format = ssh
+[pager]
+	blame = delta
+[interactive]
+    diffFilter = delta --color-only
+[delta]
+	navigate = true
+	light = false
+	side-by-side = true
+	hyperlinks = true
+[merge]
+		conflictstyle = diff3
