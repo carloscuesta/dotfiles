@@ -16,8 +16,9 @@ brew_packages() {
 		brew_install "git"
 		brew_install "tree"
 		brew_install "jq"
-                brew_install "gh"
+		brew_install "gh"
 		brew_install "bat"
+		brew_install "git-delta"
 
 		# Developer
 
