@@ -10,8 +10,8 @@ npm_packages() {
 		execute "npm update -g npm"
 
 		print_in_blue "npm packages"
-		npm_install "gitmoji-cli"
 		npm_install "@antfu/ni"
+		execute "corepack enable && corepack enable npm"
 	else
 		print_error 'npm not installed (required to install node packages).'
 	fi
