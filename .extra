@@ -1,3 +1,6 @@
+# FNM
+eval "$(fnm env --use-on-cd)"
+
 # History
 HISTFILE=~/.zsh_history
 SAVEHIST=1000

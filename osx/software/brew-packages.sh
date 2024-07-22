@@ -21,9 +21,8 @@ brew_packages() {
 		brew_install "git-delta"
 
 		# Developer
-
 		print_in_blue "Developer packages"
-		brew_install "yarn"
+		brew_install "fnm"
 
 		# OSX Software
 
