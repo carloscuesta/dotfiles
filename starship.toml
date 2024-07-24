@@ -1,0 +1,191 @@
+"$schema" = "https://starship.rs/config-schema.json"
+
+add_newline = true
+
+format = """
+$all\
+$fill\
+$time\
+$line_break\
+$character
+"""
+
+[fill]
+symbol = ' '
+
+[username]
+show_always = true
+format='[$user]($style) [in](white bold) '
+style_user = "bold red"
+aliases = { "carloscuesta" = "carlos" }
+
+[git_branch]
+style="bold blue"
+format='[on](white bold) [$symbol$branch(:$remote_branch)]($style) '
+symbol = " "
+
+[git_status]
+format='($ahead_behind($style) )'
+ahead="[󱦲](green bold)"
+behind="[󱦳](red bold)"
+diverged="[󰦻](yellow bold)"
+
+[git_metrics]
+added_style = 'bold green'
+format = '([+$added]($added_style)/[-$deleted]($deleted_style) )'
+disabled = false
+
+[package]
+symbol = " "
+disabled = true
+
+[directory]
+style="bold green"
+read_only = " 󰌾"
+
+[time]
+disabled = false
+time_format="%R"
+style="bold white"
+format='[$time]($style)'
+
+[bun]
+disabled = true
+
+[buf]
+disabled = true
+
+[cmake]
+disabled = true
+
+[cobol]
+disabled = true
+
+[crystal]
+disabled = true
+
+[daml]
+disabled = true
+
+[dart]
+disabled = true
+
+[deno]
+disabled = true
+
+[dotnet]
+format = "[$symbol(🎯 $tfm )]($style)"
+
+[elixir]
+disabled = true
+
+[elm]
+disabled = true
+
+[erlang]
+disabled = true
+
+[fennel]
+disabled = true
+
+[gleam]
+disabled = true
+
+[golang]
+disabled = true
+
+[gradle]
+disabled = true
+
+[haxe]
+disabled = true
+
+[helm]
+disabled = true
+
+[java]
+disabled = true
+
+[julia]
+disabled = true
+
+[kotlin]
+disabled = true
+
+[lua]
+disabled = true
+
+[meson]
+disabled = true
+
+[nim]
+disabled = true
+
+[nodejs]
+disabled = true
+
+[ocaml]
+disabled = true
+
+[opa]
+disabled = true
+
+[perl]
+disabled = true
+
+[php]
+disabled = true
+
+[pulumi]
+disabled = true
+
+[purescript]
+disabled = true
+
+[python]
+disabled = true
+
+[quarto]
+disabled = true
+
+[raku]
+disabled = true
+
+[red]
+disabled = true
+
+[rlang]
+disabled = true
+
+[ruby]
+disabled = true
+
+[rust]
+disabled = true
+
+[solidity]
+disabled = true
+
+[typst]
+disabled = true
+
+[swift]
+disabled = true
+
+[vagrant]
+disabled = true
+
+[vlang]
+disabled = true
+
+[zig]
+disabled = true
+
+# https://github.com/starship/starship/issues/1192
+# https://github.com/starship/starship/discussions/1252#discussioncomment-692829
+# [custom.git_status_simplified]
+# when = 'test -n "$(git status --porcelain)"'
+# symbol = '✗'
+# style = 'red bold'
+# format = '[$symbol]($style)'
+# shell = [ 'bash' ]

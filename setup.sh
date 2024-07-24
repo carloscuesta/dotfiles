@@ -34,6 +34,9 @@ done;
 unset files;
 print_success ".files copied to your $HOME/.dotfiles/ directory."
 
+execute "cp -iv $execution_dir/starship.toml $HOME/.config/"
+print_success "starship.toml copied to your $HOME/.config/ directory."
+
 ./osx/software/brew-install.sh
 ./osx/software/brew-packages.sh
 ./osx/software/npm-packages.sh
