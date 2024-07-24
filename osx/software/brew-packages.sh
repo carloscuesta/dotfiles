@@ -13,6 +13,7 @@ brew_packages() {
 		# Shell Specific
 
 		print_in_blue "Shell packages"
+		brew_install "starship"
 		brew_install "git"
 		brew_install "tree"
 		brew_install "jq"
