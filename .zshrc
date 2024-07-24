@@ -8,9 +8,6 @@ for file in ~/.dotfiles/.{aliases,functions,exports,extra}; do
 done;
 unset file;
 
-# Set name of the theme to load @ ~/.oh-my-zsh/themes/
-ZSH_THEME="materialshell"
-
 # Uncomment the following line to disable auto-setting terminal title.
 DISABLE_AUTO_TITLE="true"
 
@@ -29,5 +26,7 @@ HIST_STAMPS="dd.mm.yyyy"
 plugins=(z zsh-autosuggestions)
 
 # User configuration
-
 source $ZSH/oh-my-zsh.sh
+
+# Starship
+eval "$(starship init zsh)"
