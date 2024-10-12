@@ -20,6 +20,7 @@ brew_packages() {
 		brew_install "gh"
 		brew_install "bat"
 		brew_install "git-delta"
+		brew_install "lazygit"
 
 		# Developer
 		print_in_blue "Developer packages"
