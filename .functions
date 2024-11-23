@@ -12,14 +12,6 @@ function zipf() {
 	zip -r "$1".zip "$1" ;
 }
 
-# camerausedby : who is using the laptop's iSight camera?
-
-camerausedby() {
-    echo "Checking to see who is using the iSight camera… 📷"
-    usedby=$(lsof | grep -w "AppleCamera\|USBVDC\|iSight" | awk '{printf $2"\n"}' | xargs ps)
-    echo -e "Recent camera uses:\n$usedby"
-}
-
 # extract : extract any file with this command.
 
 extract () {
@@ -41,16 +33,4 @@ extract () {
    else
        echo "'$1' is not a valid file"
    fi
-}
-
-# json : pretty print of a json
-
-function json() {
-  if [ -p /dev/stdin ]; then
-    # piping, e.g. `echo '{"foo":42}' | json`
-    python -mjson.tool | pygmentize -l javascript
-  else
-    # e.g. `json '{"foo":42}'`
-    python -mjson.tool <<< "$*" | pygmentize -l javascript
-  fi
 }
