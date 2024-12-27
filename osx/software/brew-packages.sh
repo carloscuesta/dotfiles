@@ -21,6 +21,7 @@ brew_packages() {
 		brew_install "bat"
 		brew_install "git-delta"
 		brew_install "lazygit"
+		brew_install "eza"
 
 		# Developer
 		print_in_blue "Developer packages"
