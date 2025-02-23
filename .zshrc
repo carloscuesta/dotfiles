@@ -1,13 +1,5 @@
 # .zshrc config file
 
-# Loading our .dotfiles (aliases, functions, exports, extras)
-# ~/.extra can be used for settings you don't want to commit.
-
-for file in ~/.dotfiles/.{aliases,functions,exports,extra}; do
-	[ -r "$file" ] && [ -f "$file" ] && source "$file";
-done;
-unset file;
-
 # Uncomment the following line to disable auto-setting terminal title.
 DISABLE_AUTO_TITLE="true"
 
@@ -25,8 +17,16 @@ HIST_STAMPS="dd.mm.yyyy"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(z zsh-autosuggestions)
 
+# Loading our .dotfiles (aliases, functions, exports, extras)
+# ~/.extra can be used for settings you don't want to commit.
+for file in ~/.dotfiles/.{functions,exports,extra}; do
+	[ -r "$file" ] && [ -f "$file" ] && source "$file";
+done;
+unset file;
+
 # User configuration
 source $ZSH/oh-my-zsh.sh
+source ~/.dotfiles/.aliases
 
 # Starship
 eval "$(starship init zsh)"
