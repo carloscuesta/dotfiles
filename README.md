@@ -45,15 +45,9 @@ You can customize this setup in two ways, the **appearance** and the **functiona
 
 ### Appearance
 
-To customize the visual part of the terminal. You will need to install a theme. An **iTerm** theme has been provided.
+To customize the visual part of the terminal. You will need to install a theme.
 
 I use a theme called [materialshell](https://github.com/carloscuesta/materialshell).
-
-#### iTerm2
-
-If you want to change the iTerm’s 2 theme, go to `iTerm Preferences > Profiles > + (Create a new profile) > Colors > Load Presets > Import > (Select the theme)`.
-
-Set as **default** the profile with the theme you like selecting it and going to `Profiles > Other Actions ... > Set as default`.
 
 #### OS X Terminal
 
@@ -75,7 +69,7 @@ The dotfiles script will **ask to install** the following packages and software:
 
 **OSX Software**
 
-* [iTerm](https://iterm2.com)
+* [Ghostty](http://ghostty.org)
 * [Rectangle](https://rectangleapp.com/)
 
 ### Functionality
