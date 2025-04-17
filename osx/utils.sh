@@ -64,7 +64,7 @@ brew_install() {
 brew_cask_install() {
     ask_for_confirmation "Would you like to install $1 ?"
     if answer_is_yes; then
-        execute "brew cask install $1"
+        execute "brew install --cask $1"
         print_success "$1 installed."
     else
         print_error "$1 not installed."
