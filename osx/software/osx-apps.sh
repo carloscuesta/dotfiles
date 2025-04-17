@@ -4,12 +4,9 @@ source './osx/utils.sh'
 
 osx_apps() {
 
-	print_in_blue "Installing brew cask."
-
-	brew_install "caskroom/cask/brew-cask"
-	brew_install "caskroom/versions"
-
+	print_in_blue "Installing macOS apps."
 	brew_cask_install "visual-studio-code"
+	brew_cask_install "ghostty"
 	brew_cask_install "rectangle"
 }
 
