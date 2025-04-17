@@ -16,7 +16,10 @@ ZShell() {
 	curl -L http://install.ohmyz.sh | sh &> /dev/null
 
 	file_exists "$HOME/.zshrc"
-	execute "curl -L -o ~/.oh-my-zsh/custom/themes/materialshell.zsh-theme https://raw.githubusercontent.com/carloscuesta/materialshell/master/materialshell.zsh"
+
+	execute "curl -L -o ~/.config/ghostty/themes/materialshell-dark https://raw.githubusercontent.com/carloscuesta/materialshell/refs/heads/master/shell-color-themes/ghostty/materialshell-dark"
+
+	execute "curl -L -o ~/.config/ghostty/themes/materialshell-light https://raw.githubusercontent.com/carloscuesta/materialshell/refs/heads/master/shell-color-themes/ghostty/materialshell-light"
 
   execute "git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions"
 
