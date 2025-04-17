@@ -18,8 +18,10 @@ git_config() {
 		read git_editor
 		execute "git config --global core.editor $git_editor --wait"
 		
-		print_question "Git signing key: "
+		# https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key#telling-git-about-your-ssh-key
+		print_question "Git signing key path (SSH): "
 		read git_signing_key
+		execute "git config --global gpg.format ssh"
 		execute "git config --global user.signingkey $git_signing_key"
 
 		print_success "Git setup -> Username: $git_username , Email: $git_email\n, Editor: $git_editor\n"
