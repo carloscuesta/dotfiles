@@ -1,0 +1,10 @@
+window-inherit-font-size=false
+window-padding-x=12
+font-size=20
+font-family="Consolas"
+bold-is-bright=true
+theme=light:materialshell-light,dark:materialshell-dark
+mouse-hide-while-typing=true
+macos-titlebar-proxy-icon="hidden"
+cursor-style="underline"
+macos-titlebar-style="tabs"

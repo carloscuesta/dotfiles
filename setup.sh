@@ -37,6 +37,10 @@ print_success ".files copied to your $HOME/.dotfiles/ directory."
 execute "cp -iv $execution_dir/config/starship.toml $HOME/.config/"
 print_success "starship.toml copied to your $HOME/.config/ directory."
 
+execute "mkdir -p $HOME/.config/ghostty"
+execute "cp -iv $execution_dir/config/ghostty $HOME/.config/ghostty/"
+print_success "ghostty copied to your $HOME/.config/ghostty/ directory."
+
 ./osx/software/brew-install.sh
 ./osx/software/brew-packages.sh
 ./osx/software/npm-packages.sh
