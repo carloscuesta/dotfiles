@@ -1,0 +1,21 @@
+{{- if eq .chezmoi.os "darwin" -}}
+#!/bin/bash
+set -eufo pipefail
+
+brew bundle --file=/dev/stdin <<EOF
+brew "starship"
+brew "git"
+brew "tree"
+brew "jq"
+brew "gh"
+brew "bat"
+brew "git-delta"
+brew "lazygit"
+brew "eza"
+brew "fnm"
+cask "visual-studio-code"
+cask "ghostty"
+cask "rectangle"
+cask "raycast"
+EOF
+{{ end -}}
