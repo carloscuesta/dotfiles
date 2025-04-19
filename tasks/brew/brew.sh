@@ -1,5 +1,4 @@
 set -euo pipefail
-
 source "$UTILS"
 
 BREWFILE="${EXECUTION_DIR}/tasks/brew/Brewfile"
