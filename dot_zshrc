@@ -1,0 +1,18 @@
+# .zshrc config file
+DISABLE_AUTO_TITLE="true"
+ENABLE_CORRECTION="false"
+HIST_STAMPS="dd.mm.yyyy"
+plugins=(z zsh-autosuggestions)
+
+# Loading .dotfiles
+for file in ~/.dotfiles/.{functions,exports,extra}; do
+	[ -r "$file" ] && [ -f "$file" ] && source "$file";
+done;
+unset file;
+
+# User configuration
+source $ZSH/oh-my-zsh.sh
+source ~/.dotfiles/.aliases
+
+# Starship
+eval "$(starship init zsh)"
