@@ -1,8 +1,20 @@
-source './osx/utils.sh'
+set -euo pipefail
+source "$UTILS"
 
-# osxprefs : Setting up my OS X preferences
+set_computer_info() {
+  print_question "Computer Name: "
+  read computer_name
+  print_question "Host Name: "
+  read host_name
+  print_question "LocalHostName: "
+  read local_host_name
 
-osxprefs() {
+  sudo scutil --set ComputerName "$computer_name"
+  sudo scutil --set HostName "$host_name"
+  sudo scutil --set LocalHostName "$local_host_name"
+}
+
+os_preferences() {
 	# Show the ~/Library folder
 	chflags nohidden ~/Library
 	print_success "Library shown."
@@ -26,18 +38,6 @@ osxprefs() {
 	defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true
 	print_success "Right click mapped to the bottom right corner at the trackpad."
 
-	# Finder: show all filename extensions
-	defaults write NSGlobalDomain AppleShowAllExtensions -bool true
-	print_success "Finder showing filename extensions"
-
-	# Automatically quit printer app once the print jobs complete
-	defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
-	print_success "Printer app quit once the prints complete."
-
-	# Disable the “Are you sure you want to open this application?” dialog
-	defaults write com.apple.LaunchServices LSQuarantine -bool false
-	print_success "Are you sure you want to open this app dialog disabled."
-
 	# Enable full keyboard access for all controls
 	# (e.g. enable Tab in modal dialogs)
 	defaults write NSGlobalDomain AppleKeyboardUIMode -int 2
@@ -54,4 +54,8 @@ osxprefs() {
 	print_success "Safari developer tools and web inspector enabled."
 }
 
-osxprefs
+main() {
+  print_info "macOS setup"
+  set_computer_info
+  os_preferences
+}
