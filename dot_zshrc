@@ -4,15 +4,15 @@ ENABLE_CORRECTION="false"
 HIST_STAMPS="dd.mm.yyyy"
 plugins=(z zsh-autosuggestions)
 
-# Loading .dotfiles
-for file in ~/.dotfiles/.{functions,exports,extra}; do
-	[ -r "$file" ] && [ -f "$file" ] && source "$file";
+# Oh-My-Zsh
+export ZSH=$HOME/.oh-my-zsh
+source $ZSH/oh-my-zsh.sh
+
+# Loading dotfiles
+for file in ~/.dotfiles/.{aliases,functions,exports,extra}; do
+  [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
-
-# User configuration
-source $ZSH/oh-my-zsh.sh
-source ~/.dotfiles/.aliases
 
 # Starship
 eval "$(starship init zsh)"
