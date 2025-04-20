@@ -1,0 +1,67 @@
+{{- if eq .chezmoi.os "darwin" -}}
+#!/bin/bash
+set -eufo pipefail
+
+echo "  Setting macOS defaults"
+
+osascript -e 'tell application "System Preferences" to quit'
+
+echo "📚  Show the ~/Library folder"
+chflags nohidden ~/Library
+
+# Keyboard
+
+echo "⌨️  Set AppleEnabledInputSources (US Keyboard Layout)"
+defaults write com.apple.HIToolbox AppleEnabledInputSources -array-add '<dict><key>InputSourceKind</key><string>Keyboard Layout</string><key>KeyboardLayout ID</key><integer>252</integer><key>KeyboardLayout Name</key><string>ABC</string></dict>'
+
+defaults write com.apple.HIToolbox AppleEnabledInputSources -array-add '<dict><key>InputSourceKind</key><string>Non Keyboard Input Method</string><key>Bundle ID</key><string>com.apple.CharacterPaletteIM</string></dict>'
+
+echo "⌨️  Set AppleSelectedInputSources (US Keyboard Layout)"
+defaults write com.apple.HIToolbox AppleSelectedInputSources -array-add '<dict><key>InputSourceKind</key><string>Keyboard Layout</string><key>KeyboardLayout ID</key><integer>252</integer><key>KeyboardLayout Name</key><string>ABC</string></dict>'
+
+defaults write com.apple.HIToolbox AppleSelectedInputSources -array-add '<dict><key>InputSourceKind</key><string>Non Keyboard Input Method</string><key>Bundle ID</key><string>com.apple.PressAndHold</string></dict>'
+
+echo "⌨️  Set AppleCurrentKeyboardLayoutInputSourceID to ABC"
+defaults write com.apple.HIToolbox AppleCurrentKeyboardLayoutInputSourceID com.apple.keylayout.ABC
+
+echo "⌨️  Enable keyboard navigation"
+defaults write NSGlobalDomain AppleKeyboardUIMode -int 2
+
+# Trackpad
+
+echo "🖱️  Set scroll direction to normal"
+defaults write -g com.apple.swipescrolldirection -bool false
+
+echo "🖱️  Enable trackpad right secondary corner click"
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadCornerSecondaryClick -int 2
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightClick -bool true
+defaults -currentHost write NSGlobalDomain com.apple.trackpad.trackpadCornerClickBehavior -int 1
+defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true
+
+# Dock
+
+echo "💈  Automatically hide and show the dock"
+defaults write com.apple.dock autohide -bool true
+
+# Finder
+
+echo "📁  Sort Finder icons by name"
+/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy name" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:arrangeBy name" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:arrangeBy name" ~/Library/Preferences/com.apple.finder.plist
+
+echo "📁  Set Finder icons size"
+/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:iconSize 64" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:iconSize 64" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:iconSize 64" ~/Library/Preferences/com.apple.finder.plist
+
+echo "📁  Set Finder preferred view style to icon"
+defaults write com.apple.finder FXPreferredViewStyle -string "icnv"
+
+# Safari
+
+echo "🌐  Enable Safari developer tools"
+defaults write com.apple.Safari IncludeDevelopMenu -bool true
+defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
+defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool true
+{{ end -}}

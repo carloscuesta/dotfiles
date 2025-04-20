@@ -89,8 +89,8 @@ file_exists() {
 }
 
 cmd_exists() {
-    command -v "$1" &> /dev/null
-    return $?
+  command -v "$1" &> /dev/null
+  return $?
 }
 
 execute() {
