@@ -1,7 +1,7 @@
-{{- if eq .chezmoi.os "darwin" -}}
 #!/bin/bash
 set -eufo pipefail
 
+{{- if eq .chezmoi.os "darwin" -}}
 echo "  Setting macOS defaults"
 
 osascript -e 'tell application "System Preferences" to quit'
@@ -64,4 +64,22 @@ echo "🌐  Enable Safari developer tools"
 defaults write com.apple.Safari IncludeDevelopMenu -bool true
 defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
 defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool true
+
+{{- if .setSshKey -}}
+  echo "🔑  Setting up SSH key"
+  ssh-keygen -t ed25519 -C "{{ .email }}" -f "{{ .chezmoi.homeDir }}/.ssh/{{ .gitSigningKeyName }}"
+  echo "✅  Created {{ .gitSigningKeyName }} key"
+
+  echo "🔑  Adding key to agent"
+  eval "$(ssh-agent -s)"
+  ssh-add --apple-use-keychain {{ .chezmoi.homeDir }}/.ssh/{{ .gitSigningKeyName }}
+  echo "✅  Added {{ .gitSigningKeyName }} key to agent"
+
+  echo "🐙  Uploading SSH key to GitHub"
+  pbcopy < {{ .chezmoi.homeDir }}/.ssh/{{ .gitSigningKeyName }}.pub
+  echo "✅  Copied key contents to clipboard"
+  echo "🌐  Opening GitHub"
+  open https://github.com/settings/ssh/new
+{{ end -}}
+
 {{ end -}}
