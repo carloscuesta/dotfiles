@@ -2,7 +2,7 @@
 set -eufo pipefail
 
 {{- if eq .chezmoi.os "darwin" }}
-echo "  Setting macOS defaults"
+echo "🍏  Setting macOS defaults"
 
 osascript -e 'tell application "System Preferences" to quit'
 
@@ -60,13 +60,6 @@ echo "📁  Set Finder icons size"
 
 echo "📁  Set Finder preferred view style to icon"
 defaults write com.apple.finder FXPreferredViewStyle -string "icnv"
-
-# Safari
-
-echo "🌐  Enable Safari developer tools"
-defaults write com.apple.Safari IncludeDevelopMenu -bool true
-defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
-defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool true
 
 {{- if .setSshKey }}
   echo "🔑  Setting up SSH key"
