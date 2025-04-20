@@ -27,6 +27,9 @@ defaults write com.apple.HIToolbox AppleCurrentKeyboardLayoutInputSourceID com.a
 echo "⌨️  Enable keyboard navigation"
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 2
 
+echo "⌨️  Disable Spotlight keyboard shortcut"
+/usr/libexec/PlistBuddy -c "Set :AppleSymbolicHotKeys:64:enabled false" ~/Library/Preferences/com.apple.symbolichotkeys.plist
+
 # Trackpad
 
 echo "🖱️  Set scroll direction to normal"
