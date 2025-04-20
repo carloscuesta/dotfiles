@@ -1,11 +1,12 @@
 # .exports
 
-# Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
-
 # Code as default editor.
 export EDITOR='code'
 
 # Language
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+
+# XDG
+export XDG_CONFIG_HOME="$HOME/.config"
+export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/config"

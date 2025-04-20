@@ -1,0 +1,192 @@
+[user]
+  name = Carlos Cuesta
+  email = {{ .email }}
+  signingkey = {{ .chezmoi.homeDir }}/.ssh/{{ .gitSigningKeyName }}.pub
+[alias]
+  # Log
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+
+  # Status
+  s = status -s
+
+  # Add
+  a = add
+  ai = add -p
+
+  # Commit
+  ct = commit -m
+  amend = commit --amend
+
+  # Checkout
+  co = checkout
+  cob = checkout -b
+
+  # Push
+  p = push
+  pf = push --force-with-lease
+
+  # Undo
+  undo = reset HEAD~1 --mixed
+
+  # Pull
+  up = pull
+
+  # Wip
+  wip = "!git add --all; git commit -m WIP"
+
+  # Diff
+  d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
+
+  # Pull
+  up = pull --rebase
+
+  # Push local branch to remote
+  plb = "!f() { git push -u origin $1}"
+
+  # Clean untracked files
+  clean = clean -f
+
+  # Rebase
+  # Rebase on top of branch
+  rot = "!f() { git rebase -i --autosquash origin/\"$1\"; }; f"
+  # Interactive rebase with the given number of latest commits
+  reb = "!r() { git rebase -i HEAD~$1; }; r"
+
+  # Switch to a branch, creating it if necessary
+  go = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
+
+  # Tags
+  tags = tag -l
+
+  # Branches
+  branches = branch --sort=-committerdate --verbose --format='%(HEAD) %(color:red)%(objectname:short)%(color:reset) - %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) - %(color:green)(%(committerdate:relative))%(color:reset) %(color:blue)<%(authorname)>%(color:reset)'
+
+  remotes = remote -v
+
+  # Credit an author on the latest commit
+  credit = "!f() { git commit --amend --author \"$1 <$2>\" -C HEAD; }; f"
+
+  # Remove the old tag with this name and tag the latest commit with it.
+  retag = "!r() { git tag -d $1 && git push origin :refs/tags/$1 && git tag $1; }; r"
+
+  # Find branches containing commit
+  fb = "!f() { git branch -a --contains $1; }; f"
+
+  # Find tags containing commit
+  ft = "!f() { git describe --always --contains $1; }; f"
+
+  # Find commits by source code
+  fc = "!f() { git log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d' --decorate --date=short -S$1; }; f"
+
+  # Find commits by commit message
+  fm = "!f() { git log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d' --decorate --date=short --grep=$1; }; f"
+
+  # Remove branches that have already been merged with master
+  # a.k.a. ‘delete merged’
+  dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
+
+  # List contributors with number of commits
+  contributors = shortlog --summary --numbered
+
+  [apply]
+  # Detect whitespace errors when applying a patch
+  whitespace = fix
+
+  [core]
+  pager = delta
+  # Use custom `.gitignore` and `.gitattributes`
+  excludesfile = ~/.gitignore
+  attributesfile = ~/.gitattributes
+
+  # Treat spaces before tabs and all kinds of trailing whitespace as an error
+  # [default] trailing-space: looks for spaces at the end of a line
+  # [default] space-before-tab: looks for spaces before tabs at the beginning of a line
+  whitespace = space-before-tab,-indent-with-non-tab,trailing-space
+
+  # Make `git rebase` safer on OS X
+  # More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
+  trustctime = false
+
+  # Prevent showing files whose names contain non-ASCII symbols as unversioned.
+  # http://michael-kuehnel.de/git/2014/11/21/git-mac-osx-and-german-umlaute.html
+  precomposeunicode = false
+  editor = code --wait
+
+[color]
+  # Use colors in Git commands that are capable of colored output when
+  # outputting to the terminal. (This is the default setting in Git ≥ 1.8.4.)
+  ui = auto
+
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold # line info
+  old = red # deletions
+  new = green # additions
+
+[color "status"]
+  added = green
+  changed = yellow
+  untracked = red
+
+[diff]
+  # Detect copies as well as renames
+  renames = copies
+
+[diff "bin"]
+  # Use `hexdump` to diff binary files
+  textconv = hexdump -v -C
+
+[help]
+  # Automatically correct and execute mistyped commands
+  autocorrect = 1
+
+[merge]
+  # Include summaries of merged commits in newly created merge commit messages
+  log = true
+
+[push]
+  default = current
+  # Make `git push` push relevant annotated tags when pushing branches out.
+  followTags = true
+
+# URL shorthands
+
+[url "git@github.com:"]
+  insteadOf = "gh:"
+  pushInsteadOf = "github:"
+  pushInsteadOf = "git://github.com/"
+
+[url "git://github.com/"]
+  insteadOf = "github:"
+
+[url "git@gist.github.com:"]
+  insteadOf = "gst:"
+  pushInsteadOf = "gist:"
+  pushInsteadOf = "git://gist.github.com/"
+
+[url "git://gist.github.com/"]
+  insteadOf = "gist:"
+
+[pull]
+  rebase = true
+[commit]
+  gpgsign = true
+[tag]
+  gpgsign = true
+[gpg]
+  format = ssh
+[pager]
+  blame = delta
+[interactive]
+    diffFilter = delta --color-only
+[delta]
+  navigate = true
+  light = false
+  hyperlinks = true
+[merge]
+  conflictstyle = diff3
