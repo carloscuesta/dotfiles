@@ -3,6 +3,8 @@
 set -eufo pipefail
 
 brew bundle --file=/dev/stdin <<EOF
+tap "homebrew/cask-fonts"
+tap "timrogers/tap"
 brew "starship"
 brew "git"
 brew "tree"
@@ -13,6 +15,8 @@ brew "git-delta"
 brew "lazygit"
 brew "eza"
 brew "fnm"
+brew "litra-autotoggle"
+brew "litra"
 cask "visual-studio-code"
 cask "ghostty"
 cask "rectangle"
