@@ -1,7 +1,7 @@
 #!/bin/bash
 set -eufo pipefail
 
-{{- if eq .chezmoi.os "darwin" -}}
+{{- if eq .chezmoi.os "darwin" }}
 echo "  Setting macOS defaults"
 
 osascript -e 'tell application "System Preferences" to quit'
@@ -68,7 +68,7 @@ defaults write com.apple.Safari IncludeDevelopMenu -bool true
 defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool true
 defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool true
 
-{{- if .setSshKey -}}
+{{- if .setSshKey }}
   echo "🔑  Setting up SSH key"
   ssh-keygen -t ed25519 -C "{{ .email }}" -f "{{ .chezmoi.homeDir }}/.ssh/{{ .gitSigningKeyName }}"
   echo "✅  Created {{ .gitSigningKeyName }} key"
