@@ -44,7 +44,9 @@ else
 fi
 
 if [ -d "$HOME/.local/share/chezmoi/.git" ]; then
-  echo "✅  Chezmoi already initialized"
+  echo "ℹ️  Chezmoi already initialized, pulling latest changes..."
+  chezmoi update
+  echo "✅  Chezmoi updated"
 else
   chezmoi init carloscuesta
   chezmoi apply
