@@ -16,3 +16,4 @@ alias flushDNS='dscacheutil -flushcache' # Flush out the DNS Cache
 alias numFiles='echo $(ls -1 | wc -l)' # Count of non-hidden files in current dir
 alias cat='bat --paging=never' # Use bat for cat
 alias ls='eza --no-permissions --no-time --no-user --color=always --no-filesize --no-quotes' # Use eza for ls
+alias dotfiles='curl -sfL https://raw.githubusercontent.com/carloscuesta/dotfiles/master/.setup.sh | bash'
