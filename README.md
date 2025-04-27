@@ -14,6 +14,12 @@ Run the command to install the dotfiles 👇🏼
 curl -sfL https://raw.githubusercontent.com/carloscuesta/dotfiles/master/.setup.sh | bash
 ```
 
+If you already run the command before, you can use the alias:
+
+```sh
+dotfiles
+```
+
 ## What's inside?
 
 A lot of things! Here's a list of the most important ones 👇🏼:
