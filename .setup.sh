@@ -1,11 +1,6 @@
 #!/bin/bash
 set -eufo pipefail
 
-cmd_exists() {
-  command -v "$1" &> /dev/null
-  return $?
-}
-
 echo "🚀  Setting up @carloscuesta dotfiles."
 
 if xcode-select -p &> /dev/null; then
@@ -20,7 +15,7 @@ else
   echo "✅  Xcode command line tools installed successfully."
 fi
 
-if cmd_exists "brew"; then
+if which -s "brew"; then
   echo "✅  Homebrew is already installed."
 else
   echo "🍺  Installing Homebrew"
@@ -36,7 +31,7 @@ else
   echo "✅  oh-my-zsh installed successfully."
 fi
 
-if cmd_exists "chezmoi"; then
+if which -s "chezmoi"; then
   echo "✅  Chezmoi is already installed."
 else
   echo "⚪️  Installing Chezmoi"
