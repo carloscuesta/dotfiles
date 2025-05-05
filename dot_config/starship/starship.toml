@@ -74,7 +74,7 @@ disabled = true
 disabled = true
 
 [dotnet]
-format = "[$symbol(🎯 $tfm )]($style)"
+disabled = true
 
 [elixir]
 disabled = true
