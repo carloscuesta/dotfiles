@@ -19,7 +19,7 @@ if which -s "brew"; then
   echo "✅  Homebrew is already installed."
 else
   echo "🍺  Installing Homebrew"
-  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   echo "✅  Homebrew installed successfully."
 fi
 
