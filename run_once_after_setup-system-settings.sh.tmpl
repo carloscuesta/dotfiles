@@ -12,17 +12,41 @@ chflags nohidden ~/Library
 # Keyboard
 
 echo "⌨️  Set AppleEnabledInputSources (US Keyboard Layout)"
-defaults write com.apple.HIToolbox AppleEnabledInputSources -array-add '<dict><key>InputSourceKind</key><string>Keyboard Layout</string><key>KeyboardLayout ID</key><integer>252</integer><key>KeyboardLayout Name</key><string>ABC</string></dict>'
-
-defaults write com.apple.HIToolbox AppleEnabledInputSources -array-add '<dict><key>InputSourceKind</key><string>Non Keyboard Input Method</string><key>Bundle ID</key><string>com.apple.CharacterPaletteIM</string></dict>'
+defaults write com.apple.HIToolbox AppleEnabledInputSources -array \
+  '<dict>
+    <key>InputSourceKind</key><string>Keyboard Layout</string>
+    <key>KeyboardLayout ID</key><integer>252</integer>
+    <key>KeyboardLayout Name</key><string>ABC</string>
+  </dict>'
 
 echo "⌨️  Set AppleSelectedInputSources (US Keyboard Layout)"
-defaults write com.apple.HIToolbox AppleSelectedInputSources -array-add '<dict><key>InputSourceKind</key><string>Keyboard Layout</string><key>KeyboardLayout ID</key><integer>252</integer><key>KeyboardLayout Name</key><string>ABC</string></dict>'
-
-defaults write com.apple.HIToolbox AppleSelectedInputSources -array-add '<dict><key>InputSourceKind</key><string>Non Keyboard Input Method</string><key>Bundle ID</key><string>com.apple.PressAndHold</string></dict>'
+defaults write com.apple.HIToolbox AppleSelectedInputSources -array \
+  '<dict>
+    <key>InputSourceKind</key><string>Keyboard Layout</string>
+    <key>KeyboardLayout ID</key><integer>252</integer>
+    <key>KeyboardLayout Name</key><string>ABC</string>
+  </dict>'
 
 echo "⌨️  Set AppleCurrentKeyboardLayoutInputSourceID to ABC"
-defaults write com.apple.HIToolbox AppleCurrentKeyboardLayoutInputSourceID com.apple.keylayout.ABC
+defaults write com.apple.HIToolbox AppleCurrentKeyboardLayoutInputSourceID -string "com.apple.keylayout.ABC"
+
+echo "⌨️  Disable ⌘+Space shortcut for Spotlight"
+defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 64 '{
+    enabled = 0;
+    value = {
+        parameters = (65535, 49, 1048576);
+        type = "standard";
+    };
+}'
+
+echo "⌨️  Disable ⌥⌘Space Finder search shortcut"
+defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 65 '{
+    enabled = 0;
+    value = {
+        parameters = (65535, 49, 1572864);
+        type = "standard";
+    };
+}'
 
 echo "⌨️  Enable keyboard navigation"
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 2
@@ -35,8 +59,14 @@ defaults write -g com.apple.swipescrolldirection -bool false
 echo "🖱️  Enable trackpad right secondary corner click"
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadCornerSecondaryClick -int 2
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightClick -bool true
+defaults write com.apple.AppleMultitouchTrackpad TrackpadCornerSecondaryClick -int 2
+defaults write com.apple.AppleMultitouchTrackpad TrackpadRightClick -bool true
 defaults -currentHost write NSGlobalDomain com.apple.trackpad.trackpadCornerClickBehavior -int 1
 defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true
+
+echo "🖱️  Disable trackpad tap to click"
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool false
+defaults write com.apple.AppleMultitouchTrackpad Clicking -bool false
 
 # Dock
 
