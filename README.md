@@ -3,8 +3,9 @@
   <p>My personal dotfiles for macOS managed with <a href="https://chezmoi.io">chezmoi</a> .</p>
 </div>
 
-![@carloscuesta shell](https://github.com/user-attachments/assets/903d23c5-724b-4762-b565-051ed87f9a3b#gh-dark-mode-only)
-![@carloscuesta shell](https://github.com/user-attachments/assets/20b90f31-0cf3-4ae0-96e9-1a3267bbf11f#gh-light-mode-only)
+![Carlos Cuesta Dotfiles](https://github.com/user-attachments/assets/cc0b0ad7-1dfc-43cc-9640-1996b5f6a2b5#gh-light-mode-only)
+
+![Carlos Cuesta Dotfiles](https://github.com/user-attachments/assets/e2eb0c23-ae24-435e-a6f1-b9caec873463#gh-dark-mode-only)
 
 ## Install
 
