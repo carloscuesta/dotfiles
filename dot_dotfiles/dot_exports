@@ -13,3 +13,6 @@ export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/config"
 
 # Starship
 export STARSHIP_CONFIG="$XDG_CONFIG_HOME/starship/starship.toml"
+
+# Eza
+export EZA_COLORS='di=1;34'
