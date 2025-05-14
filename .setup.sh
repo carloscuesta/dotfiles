@@ -27,7 +27,7 @@ if [ -f ~/.oh-my-zsh/oh-my-zsh.sh ]; then
   echo "✅  oh-my-zsh is already installed."
 else
   echo "💻  Installing oh-my-zsh"
-  yes | sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  yes | sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" --unattended
   echo "✅  oh-my-zsh installed successfully."
 fi
 
