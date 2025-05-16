@@ -30,24 +30,6 @@ defaults write com.apple.HIToolbox AppleSelectedInputSources -array \
 echo "⌨️  Set AppleCurrentKeyboardLayoutInputSourceID to ABC"
 defaults write com.apple.HIToolbox AppleCurrentKeyboardLayoutInputSourceID -string "com.apple.keylayout.ABC"
 
-echo "⌨️  Disable ⌘+Space shortcut for Spotlight"
-defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 64 '{
-    enabled = 0;
-    value = {
-        parameters = (65535, 49, 1048576);
-        type = "standard";
-    };
-}'
-
-echo "⌨️  Disable ⌥⌘Space Finder search shortcut"
-defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 65 '{
-    enabled = 0;
-    value = {
-        parameters = (65535, 49, 1572864);
-        type = "standard";
-    };
-}'
-
 echo "⌨️  Enable keyboard navigation"
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 2
 
@@ -67,6 +49,9 @@ defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryCli
 echo "🖱️  Disable trackpad tap to click"
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool false
 defaults write com.apple.AppleMultitouchTrackpad Clicking -bool false
+
+echo "🖱️  Set trackpad tracking speed"
+defaults write -g com.apple.trackpad.scaling -float 0.875
 
 # Dock
 
