@@ -8,3 +8,4 @@ mouse-hide-while-typing=true
 macos-titlebar-proxy-icon="hidden"
 cursor-style="underline"
 macos-titlebar-style="tabs"
+keybind = super+f=write_screen_file:open
