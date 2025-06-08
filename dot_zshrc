@@ -1,5 +1,6 @@
 # .zshrc config file
 DISABLE_AUTO_TITLE="true"
+DISABLE_AUTO_UPDATE="true"
 ENABLE_CORRECTION="false"
 HIST_STAMPS="dd.mm.yyyy"
 plugins=(z zsh-autosuggestions)
