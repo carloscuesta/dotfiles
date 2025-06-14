@@ -1,7 +1,7 @@
 # .exports
 
 # Code as default editor.
-export EDITOR='code'
+export EDITOR='code --wait'
 
 # Language
 export LC_ALL=en_US.UTF-8
