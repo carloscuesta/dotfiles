@@ -1,6 +1,7 @@
 {
   "data": {
     "email": {{ promptString "What is your email" | quote }},
+    "profile": {{ promptChoice "What type of setup do you want" (list "personal" "work") | quote }},
     "setSshKey": {{ promptBool "Do you want to set up an SSH key" }},
     "gitSigningKeyName": "id_github"
   }
