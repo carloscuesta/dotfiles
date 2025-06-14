@@ -4,3 +4,7 @@ Host *
 
 Host github.com
   IdentityFile ~/.ssh/{{ .gitSigningKeyName }}
+
+{{- if eq .profile "work" }}
+{{- includeTemplate ".config_work" . }}
+{{ end -}}
