@@ -1,4 +1,8 @@
 {
+  "encryption": "age",
+  "age": {
+    "passphrase": true
+  },
   "data": {
     "email": {{ promptString "What is your email" | quote }},
     "profile": {{ promptChoice "What type of setup do you want" (list "personal" "work") | quote }},
