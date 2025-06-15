@@ -1,6 +1,12 @@
 {
+  "encryption": "age",
+  "age": {
+    "identity": "~/.config/chezmoi/key.txt",
+    "recipient": "age1x5kl36cdnc3mzgjvfqga2nugjuhpugwvyvu07u467zdtfu5vvy2s86mcqw"
+  },
   "data": {
     "email": {{ promptString "What is your email" | quote }},
+    "profile": {{ promptChoice "What type of setup do you want" (list "personal" "work") | quote }},
     "setSshKey": {{ promptBool "Do you want to set up an SSH key" }},
     "gitSigningKeyName": "id_github"
   }

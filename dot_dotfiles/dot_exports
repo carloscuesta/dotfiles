@@ -10,6 +10,7 @@ export LANG=en_US.UTF-8
 # XDG
 export XDG_CONFIG_HOME="$HOME/.config"
 export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/config"
+export DOCKER_CONFIG="$XDG_CONFIG_HOME/docker"
 
 # Starship
 export STARSHIP_CONFIG="$XDG_CONFIG_HOME/starship/starship.toml"

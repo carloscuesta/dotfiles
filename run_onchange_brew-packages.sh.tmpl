@@ -17,6 +17,10 @@ brew "fnm"
 brew "litra-autotoggle"
 brew "litra"
 brew "httpie"
+brew "age"
+{{- if eq .profile "work" }}
+{{ join .chezmoi.sourceDir ".work-brew-packages.age" | include | decrypt }}
+{{- end }}
 cask "visual-studio-code"
 cask "ghostty"
 cask "rectangle"
