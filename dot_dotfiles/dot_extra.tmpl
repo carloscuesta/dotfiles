@@ -1,6 +1,9 @@
 # FNM
 eval "$(fnm env --use-on-cd)"
-
+{{- if eq .profile "work" }}
+# rbenv
+eval "$(rbenv init - zsh)"
+{{ end }}
 # History
 HISTFILE=~/.zsh_history
 SAVEHIST=1000
