@@ -21,6 +21,7 @@ brew "age"
 {{- if eq .profile "work" }}
 {{ join .chezmoi.sourceDir ".work-brew-packages.age" | include | decrypt }}
 {{- end }}
+cask "google-chrome"
 cask "visual-studio-code"
 cask "ghostty"
 cask "rectangle"
