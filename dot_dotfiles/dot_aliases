@@ -17,3 +17,5 @@ alias numFiles='echo $(ls -1 | wc -l)' # Count of non-hidden files in current di
 alias cat='bat --paging=never' # Use bat for cat
 alias ls='eza --color=always --no-quotes' # Use eza for ls
 alias dotfiles='curl -sfL https://raw.githubusercontent.com/carloscuesta/dotfiles/master/.setup.sh | bash'
+alias dc='docker compose' # Short for docker compose
+alias dce='docker compose exec' # Short for docker compose exec
