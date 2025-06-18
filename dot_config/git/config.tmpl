@@ -1,7 +1,9 @@
 [user]
   name = Carlos Cuesta
   email = {{ .email }}
+  {{- if eq .profile "personal" }}
   signingkey = {{ .chezmoi.homeDir }}/.ssh/{{ .gitSigningKeyName }}.pub
+  {{- end }}
 [alias]
   # Log
   lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
@@ -177,12 +179,15 @@
 
 [pull]
   rebase = true
+{{- if eq .profile "personal" }}
 [commit]
   gpgsign = true
 [tag]
   gpgsign = true
 [gpg]
   format = ssh
+{{- end }}
+
 [pager]
   blame = delta
 [interactive]
