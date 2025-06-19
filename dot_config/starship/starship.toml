@@ -187,6 +187,9 @@ disabled = true
 [cmd_duration]
 disabled = true
 
+[battery]
+disabled = true
+
 # https://github.com/starship/starship/issues/1192
 # https://github.com/starship/starship/discussions/1252#discussioncomment-692829
 # [custom.git_status_simplified]
