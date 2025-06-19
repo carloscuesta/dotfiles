@@ -26,8 +26,8 @@ symbol = " "
 
 [git_status]
 format='($ahead_behind($style) )'
-ahead="[󱦲](green bold)"
-behind="[󱦳](red bold)"
+ahead="[](green bold)"
+behind="[](red bold)"
 diverged="[󰦻](yellow bold)"
 
 [git_metrics]
