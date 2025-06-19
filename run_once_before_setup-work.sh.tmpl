@@ -1,0 +1,6 @@
+#!/bin/bash
+set -eufo pipefail
+
+{{- if eq .profile "work" }}
+{{ join .chezmoi.sourceDir ".work-before-setup.age" | include | decrypt }}
+{{- end }}
