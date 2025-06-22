@@ -6,11 +6,16 @@ eval "$(rbenv init - zsh)"
 {{ end }}
 # History
 HISTFILE=~/.zsh_history
-SAVEHIST=1000
-HISTSIZE=999
+SAVEHIST=2000
+HISTSIZE=1999
+HISTDUP=erase
+setopt appendhistory
 setopt share_history
-setopt hist_expire_dups_first
+setopt incappendhistory
+setopt hist_ignore_all_dups
+setopt hist_save_no_dups
 setopt hist_ignore_dups
+setopt hist_find_no_dups 
 setopt hist_verify
 
 bindkey '^[[A' history-search-backward
