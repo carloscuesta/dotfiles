@@ -18,6 +18,7 @@ brew "litra-autotoggle"
 brew "litra"
 brew "httpie"
 brew "age"
+brew "tlrc"
 {{- if eq .profile "work" }}
 {{ join .chezmoi.sourceDir ".work-brew-packages.age" | include | decrypt }}
 {{- end }}
