@@ -19,3 +19,4 @@ alias ls='eza --color=always --no-quotes' # Use eza for ls
 alias dotfiles='curl -sfL https://raw.githubusercontent.com/carloscuesta/dotfiles/master/.setup.sh | bash'
 alias dc='docker compose' # Short for docker compose
 alias dce='docker compose exec' # Short for docker compose exec
+alias cd='z'

@@ -3,7 +3,7 @@ DISABLE_AUTO_TITLE="true"
 DISABLE_AUTO_UPDATE="true"
 ENABLE_CORRECTION="false"
 HIST_STAMPS="dd.mm.yyyy"
-plugins=(z zsh-autosuggestions)
+plugins=(zsh-autosuggestions)
 
 # Oh-My-Zsh
 export ZSH=$HOME/.oh-my-zsh
