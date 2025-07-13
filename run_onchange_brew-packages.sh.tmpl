@@ -30,9 +30,11 @@ cask "ghostty"
 cask "rectangle"
 cask "raycast"
 cask "slack"
-cask "zed"
 cask "elgato-camera-hub"
 cask "monitorcontrol"
 cask "httpie"
+{{- if eq .profile "personal" }}
+cask "zed"
+{{- end }}
 EOF
 {{ end -}}
