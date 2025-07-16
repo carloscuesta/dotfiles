@@ -27,8 +27,8 @@
   cob = checkout -b
 
   # Push
-  p = push
-  pf = push --force-with-lease
+  p = push --no-verify
+  pf = push --force-with-lease --no-verify
 
   # Undo
   undo = reset HEAD~1 --mixed
