@@ -1,7 +1,6 @@
 # .aliases
 
 alias rm='rm -i' # safety first
-alias historyc='rm ~/.zsh_history' # Zsh shell history clean
 alias zshedit='$EDITOR ~/.zshrc' # Edit .zshrc config file
 alias cp='cp -iv' # Preferred 'cp' implementation
 alias mv='mv -iv' # Preferred 'mv' implementation
