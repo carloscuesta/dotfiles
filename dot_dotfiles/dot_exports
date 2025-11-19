@@ -21,5 +21,9 @@ export EZA_COLORS='di=1;34'
 # Compose Bake
 export COMPOSE_BAKE='false'
 
+# Pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+
 # Path
 export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"

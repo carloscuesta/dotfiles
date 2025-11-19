@@ -10,6 +10,9 @@ eval "$(fzf --zsh)"
 {{- if eq .profile "work" }}
 # rbenv
 eval "$(rbenv init - zsh)"
+
+# Pyenv
+eval "$(pyenv init - zsh)"
 {{ end }}
 # History
 HISTFILE=~/.zsh_history
