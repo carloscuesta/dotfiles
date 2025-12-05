@@ -25,5 +25,8 @@ export COMPOSE_BAKE='false'
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 
+# rbenv shims
+export PATH="$HOME/.rbenv/shims:$PATH"
+
 # Path
 export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"

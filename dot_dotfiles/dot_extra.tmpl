@@ -10,14 +10,27 @@ eval "$(fnm env --use-on-cd)"
 eval "$(zoxide init zsh)"
 
 # fzf
-eval "$(fzf --zsh)"
+function _fzf_defer() {
+  eval "$(fzf --zsh)"
+  add-zsh-hook -d precmd _fzf_defer
+}
+autoload -Uz add-zsh-hook
+add-zsh-hook precmd _fzf_defer
 
 {{- if eq .profile "work" }}
 # rbenv
-eval "$(rbenv init - zsh)"
+rbenv() {
+  unset -f rbenv
+  eval "$(command rbenv init - zsh)"
+  rbenv "$@"
+}
 
 # Pyenv
-eval "$(pyenv init - zsh)"
+pyenv() {
+  unset -f pyenv
+  eval "$(command pyenv init - zsh)"
+  pyenv "$@"
+}
 {{ end }}
 # History
 HISTFILE=~/.zsh_history
