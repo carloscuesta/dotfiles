@@ -1,15 +1,7 @@
 # .zshrc config file
-DISABLE_AUTO_TITLE="true"
-DISABLE_AUTO_UPDATE="true"
-ENABLE_CORRECTION="false"
-HIST_STAMPS="dd.mm.yyyy"
-plugins=(zsh-autosuggestions)
+unsetopt correct correctall
 
-# Oh-My-Zsh
-export ZSH=$HOME/.oh-my-zsh
-source $ZSH/oh-my-zsh.sh
-
-# Loading dotfiles
+# Load dotfiles
 for file in ~/.dotfiles/.{aliases,functions,exports,extra}; do
   [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
