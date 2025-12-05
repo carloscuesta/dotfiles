@@ -21,6 +21,7 @@ brew "age"
 brew "tlrc"
 brew "zoxide"
 brew "fzf"
+brew "zsh-autosuggestions"
 {{- if eq .profile "work" }}
 {{ join .chezmoi.sourceDir ".work-brew-packages.age" | include | decrypt }}
 {{- end }}
