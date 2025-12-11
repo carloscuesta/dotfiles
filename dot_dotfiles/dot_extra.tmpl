@@ -3,6 +3,15 @@ if [[ -f /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]]; the
   source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 fi
 
+# zsh-history-substring-search
+if [[ -f /opt/homebrew/share/zsh-history-substring-search/zsh-history-substring-search.zsh ]]; then
+  HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND=''
+  HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND=''
+  source /opt/homebrew/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+  bindkey '^[[A' history-substring-search-up
+  bindkey '^[[B' history-substring-search-down
+fi
+
 # FNM
 eval "$(fnm env --use-on-cd)"
 
@@ -45,6 +54,3 @@ setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups 
 setopt hist_verify
-
-bindkey '^[[A' history-search-backward
-bindkey '^[[B' history-search-forward

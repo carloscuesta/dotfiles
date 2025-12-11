@@ -22,6 +22,7 @@ brew "tlrc"
 brew "zoxide"
 brew "fzf"
 brew "zsh-autosuggestions"
+brew "zsh-history-substring-search"
 {{- if eq .profile "work" }}
 {{ join .chezmoi.sourceDir ".work-brew-packages.age" | include | decrypt }}
 {{- end }}
