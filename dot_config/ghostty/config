@@ -9,4 +9,3 @@ macos-titlebar-proxy-icon="hidden"
 cursor-style="underline"
 macos-titlebar-style="tabs"
 window-inherit-working-directory=false
-keybind = super+f=write_screen_file:open
