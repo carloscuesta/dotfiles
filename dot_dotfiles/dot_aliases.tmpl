@@ -21,6 +21,7 @@ alias dcdown='dc stop && dc down --remove-orphans'
 alias dce='docker compose exec' # Short for docker compose exec
 alias cd='z'
 alias kctl='kubectl'
+alias ai='opencode'
 {{- if eq .profile "work" }}
 {{ join .chezmoi.sourceDir "dot_dotfiles/.work_aliases.age" | include | decrypt }}
 {{- end }}
