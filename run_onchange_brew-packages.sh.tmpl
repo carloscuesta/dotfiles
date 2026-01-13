@@ -23,6 +23,7 @@ brew "zoxide"
 brew "fzf"
 brew "zsh-autosuggestions"
 brew "zsh-history-substring-search"
+brew "glow"
 {{- if eq .profile "work" }}
 {{ join .chezmoi.sourceDir ".work-brew-packages.age" | include | decrypt }}
 {{- end }}
