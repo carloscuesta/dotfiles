@@ -1,0 +1,27 @@
+["skills/frontend-design"]
+    type = "archive"
+    url = "https://github.com/anthropics/claude-code/archive/refs/heads/main.tar.gz"
+    stripComponents = 3
+    include = ["*/plugins/frontend-design/**"]
+    refreshPeriod = "168h"
+
+["skills/next-best-practices"]
+    type = "archive"
+    url = "https://github.com/vercel-labs/next-skills/archive/refs/heads/main.tar.gz"
+    stripComponents = 2
+    include = ["*/skills/next-best-practices/**"]
+    refreshPeriod = "168h"
+
+["skills/vercel-react-best-practices"]
+    type = "archive"
+    url = "https://github.com/vercel-labs/agent-skills/archive/refs/heads/main.tar.gz"
+    stripComponents = 2
+    include = ["*/skills/react-best-practices/**"]
+    refreshPeriod = "168h"
+
+["skills/web-design-guidelines"]
+    type = "archive"
+    url = "https://github.com/vercel-labs/agent-skills/archive/refs/heads/main.tar.gz"
+    stripComponents = 2
+    include = ["*/skills/web-design-guidelines/**"]
+    refreshPeriod = "168h"
