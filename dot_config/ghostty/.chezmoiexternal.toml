@@ -1,0 +1,9 @@
+["themes/materialshell-dark"]
+    type = "file"
+    url = "https://raw.githubusercontent.com/carloscuesta/materialshell/master/shell-color-themes/ghostty/materialshell-dark"
+    refreshPeriod = "168h"
+
+["themes/materialshell-light"]
+    type = "file"
+    url = "https://raw.githubusercontent.com/carloscuesta/materialshell/master/shell-color-themes/ghostty/materialshell-light"
+    refreshPeriod = "168h"
