@@ -18,3 +18,4 @@ pnpm-debug.log*
 
 # AI
 .claude/settings.local.json
+.claude/
