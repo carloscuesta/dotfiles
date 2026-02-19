@@ -26,9 +26,8 @@ dotfiles
 A lot of things! Here's a list of the most important ones 👇🏼:
 
 - [Homebrew](https://brew.sh/)
-- [Ghostty](http://ghostty.org)
-- [Oh My Zsh](https://ohmyz.sh/)
 - [Starship](https://starship.rs/)
+- [Ghostty](http://ghostty.org)
 - [Materialshell](https://github.com/carloscuesta/materialshell)
 
 The installation script will define some macOS defaults, install `brew` packages, `casks` and setup the development environment.
