@@ -16,6 +16,3 @@ pnpm-debug.log*
 # VSCode
 .vscode
 
-# AI
-.claude/settings.local.json
-.claude/
