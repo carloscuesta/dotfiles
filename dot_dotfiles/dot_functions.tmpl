@@ -34,3 +34,7 @@ extract () {
        echo "'$1' is not a valid file"
    fi
 }
+
+{{- if eq .profile "work" }}
+{{ join .chezmoi.sourceDir "dot_dotfiles/.work_functions.age" | include | decrypt }}
+{{- end }}
