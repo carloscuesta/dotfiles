@@ -25,3 +25,10 @@
     stripComponents = 2
     include = ["*/skills/web-design-guidelines/**"]
     refreshPeriod = "168h"
+
+["skills/grill-me"]
+    type = "archive"
+    url = "https://github.com/mattpocock/skills/archive/refs/heads/main.tar.gz"
+    stripComponents = 2
+    include = ["*/grill-me/**"]
+    refreshPeriod = "168h"
