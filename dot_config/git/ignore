@@ -6,6 +6,7 @@
 .localized
 .LSOverride
 .AppleDouble
+*.profraw
 
 # Node.js
 npm-debug.log*
