@@ -8,28 +8,28 @@
 ["skills/next-best-practices"]
     type = "archive"
     url = "https://github.com/vercel-labs/next-skills/archive/refs/heads/main.tar.gz"
-    stripComponents = 2
+    stripComponents = 3
     include = ["*/skills/next-best-practices/**"]
     refreshPeriod = "168h"
 
 ["skills/vercel-react-best-practices"]
     type = "archive"
     url = "https://github.com/vercel-labs/agent-skills/archive/refs/heads/main.tar.gz"
-    stripComponents = 2
+    stripComponents = 3
     include = ["*/skills/react-best-practices/**"]
     refreshPeriod = "168h"
 
 ["skills/web-design-guidelines"]
     type = "archive"
     url = "https://github.com/vercel-labs/agent-skills/archive/refs/heads/main.tar.gz"
-    stripComponents = 2
+    stripComponents = 3
     include = ["*/skills/web-design-guidelines/**"]
     refreshPeriod = "168h"
 
 ["skills/grill-me"]
     type = "archive"
     url = "https://github.com/mattpocock/skills/archive/refs/heads/main.tar.gz"
-    stripComponents = 3
+    stripComponents = 4
     include = ["*/skills/productivity/grill-me/**"]
     refreshPeriod = "168h"
 
