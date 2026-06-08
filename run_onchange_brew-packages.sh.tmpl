@@ -24,6 +24,7 @@ brew "fzf"
 brew "zsh-autosuggestions"
 brew "zsh-history-substring-search"
 brew "glow"
+brew "hey"
 {{- if eq .profile "work" }}
 {{ join .chezmoi.sourceDir ".work-brew-packages.age" | include | decrypt }}
 {{- end }}
