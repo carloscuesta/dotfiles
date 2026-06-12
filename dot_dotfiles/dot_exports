@@ -1,7 +1,7 @@
 # .exports
 
 # Code as default editor.
-export EDITOR='code --wait'
+command -v code &>/dev/null && export EDITOR='code --wait'
 
 # Language
 export LC_ALL=en_US.UTF-8
@@ -26,7 +26,7 @@ export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 
 # rbenv shims
-export PATH="$HOME/.rbenv/shims:$PATH"
+[[ -d "$HOME/.rbenv/shims" ]] && export PATH="$HOME/.rbenv/shims:$PATH"
 
 # Path
-export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
+[[ -d "/opt/homebrew/opt/postgresql@15/bin" ]] && export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
