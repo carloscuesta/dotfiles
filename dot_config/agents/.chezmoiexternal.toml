@@ -39,3 +39,10 @@
     stripComponents = 4
     include = ["*/skills/productivity/handoff/**"]
     refreshPeriod = "168h"
+
+["skills/teach"]
+    type = "archive"
+    url = "https://github.com/mattpocock/skills/archive/refs/heads/main.tar.gz"
+    stripComponents = 4
+    include = ["*/skills/productivity/teach/**"]
+    refreshPeriod = "168h"
