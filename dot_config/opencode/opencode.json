@@ -1,0 +1,31 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "permission": {
+    "webfetch": "allow",
+    "external_directory": {
+      "~/.config/agents/**": "allow",
+      "~/.config/agents/skills/**": "allow",
+      "~/.claude/skills/**": "allow"
+    },
+    "bash": {
+      "mkdir *": "allow",
+      "find *": "allow",
+      "ls *": "allow",
+      "cat *": "allow",
+      "wc *": "allow",
+      "grep *": "allow",
+      "xargs *": "allow",
+      "git log *": "allow",
+      "* --help *": "allow",
+      "git status *": "allow",
+      "gh pr view *": "allow",
+      "gh pr diff *": "allow",
+      "gh pr list *": "allow",
+      "gh issue view *": "allow",
+      "gh issue list *": "allow",
+      "gh push *": "ask",
+      "gh pr merge *": "ask",
+      "rm -rf *": "deny"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(~/.config/agents/**)",
+      "Read(~/.config/agents/skills/**)",
+      "Read(~/.claude/skills/**)",
+      "Bash(mkdir:*)",
+      "Bash(find:*)",
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(wc:*)",
+      "Bash(grep:*)",
+      "Bash(xargs:*)",
+      "Bash(find:*)",
+      "Bash(git log:*)",
+      "Bash(* --help *)",
+      "Bash(git status:*)",
+      "Bash(gh pr view:*)",
+      "Bash(gh pr diff:*)",
+      "Bash(gh pr list:*)",
+      "Bash(gh issue view:*)",
+      "Bash(gh issue list:*)",
+      "WebFetch(domain:carloscuesta.me)"
+    ],
+    "deny": [
+      "Bash(rm -rf:*)"
+    ],
+    "ask": [
+      "Bash(gh push:*)",
+      "Bash(gh pr merge:*)"
+    ]
+  }
+}
