@@ -6,3 +6,6 @@ key.txt.age
 {{- if ne .profile "work" }}
 .config/docker/
 {{- end }}
+{{- if eq .profile "work" }}
+.claude/settings.json
+{{- end }}
