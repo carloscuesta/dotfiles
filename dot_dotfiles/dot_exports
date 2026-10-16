@@ -29,4 +29,4 @@ export PYENV_ROOT="$HOME/.pyenv"
 [[ -d "$HOME/.rbenv/shims" ]] && export PATH="$HOME/.rbenv/shims:$PATH"
 
 # Path
-[[ -d "/opt/homebrew/opt/postgresql@15/bin" ]] && export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
+[[ -d "/opt/homebrew/opt/postgresql@17/bin" ]] && export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
